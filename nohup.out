@@ -1,0 +1,222 @@
+
+> ec-workshops@0.0.1 dev /root/RLeapFROGS
+> gatsby develop
+
+/root/RLeapFROGS/node_modules/remark-mdx/index.js:13
+import {mdxjs} from 'micromark-extension-mdxjs'
+       ^
+
+SyntaxError: Unex
+
+[2K[1A[2K[Gpected token {
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/root/RLeapFROGS/node_modules/gatsby-recipes/dist/gra
+phql-server/server.js:52:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+
+
+
+> ec-workshops@0.0.1 dev /root/RLeapFROGS
+> gatsby develop
+
+/root/RLeapFROGS/node_modules/remark-mdx/index.js:13
+import {mdxjs} from 'micromark-extension-mdxjs'
+       ^
+
+SyntaxError: Unex
+
+[2K[1A[2K[Gpected token {
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/root/RLeapFROGS/node_modules/gatsby-recipes/dist/gra
+phql-server/server.js:52:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+
+
+
+> ec-workshops@0.0.1 dev /root/RLeapFROGS
+> gatsby develop
+
+/root/RLeapFROGS/node_modules/remark-mdx/index.js:13
+import {mdxjs} from 'micromark-extension-mdxjs'
+       ^
+
+SyntaxError: Unex
+
+[2K[1A[2K[Gpected token {
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/root/RLeapFROGS/node_modules/gatsby-recipes/dist/gra
+phql-server/server.js:52:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+
+
+success open and validate gatsby-configs - 0.187s
+
+[2K[1A[2K[Gsuccess load plugins - 1.849s
+
+[2K[1A[2K[Gsuccess onPreInit - 0.047s
+
+[2K[1A[2K[Ginfo We've detected that the Gatsby cache is incomplete (the .cache directory
+exists
+but the public directory does not). As a precaution, we're deleting your site's
+cache to ensure there's no stale data.
+
+[2K[1A[2K[Gsuccess initialize cache - 0.147s
+
+[2K[1A[2K[Gsuccess copy gatsby files - 0.035s
+
+[2K[1A[2K[Gsuccess onPreBootstrap - 0.024s
+
+[2K[1A[2K[Gsuccess createSchemaCustomization - 0.144s
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess source and transform nodes - 0.450s
+
+[2K[1A[2K[Gsuccess building schema - 0.789s
+
+[2K[1A[2K[Ginfo Total nodes: 198, SitePage nodes: 9 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess createPages - 0.057s
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess createPagesStatefully - 0.115s
+
+[2K[1A[2K[Gsuccess update schema - 0.068s
+
+[2K[1A[2K[Gsuccess write out redirect data - 0.002s
+
+[2K[1A[2K[Gsuccess Build manifest and related icons - 0.971s
+
+[2K[1A[2K[Gsuccess onPostBootstrap - 0.981s
+
+[2K[1A[2K[Ginfo bootstrap finished - 11.122s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.010s
+
+[2K[1A[2K[Gsuccess extract queries from components - 1.121s
+
+[2K[1A[2K[Gsuccess write out requires - 0.008s
+
+[2K[1A[2K[Gsuccess run static queries - 0.039s - 4/4 101.88/s
+
+[2K[1A[2K[Gsuccess run page queries - 0.022s - 2/2 90.02/s
+
+[2K[1A[2K[Gwarn `isModuleDeclaration` has been deprecated, please migrate to
+`isImportOrExportDeclaration`
+    at isModuleDeclaration (/root/RLeapFROGS/node_modules/@babel/types/lib/valid
+ators/generated/index.js:2748:35)
+    at PluginPass.Program
+(/root/RLeapFROGS/node_modules/babel-plugin-lodash/lib/index.js:102:44)
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GYou can now view ec-workshops in the browser.
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[G  http://localhost:8000/
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GView GraphiQL, an in-browser IDE, to explore your site's data and schema
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[G  http://localhost:8000/___graphql
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GNote that the development build is not optimized.
+
+[2K[1A[2K[GTo create a production build, use gatsby build
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GpathContext is deprecated. Please use pageContext instead. For migration
+instructions, see https://gatsby.dev/pathContext
+Check the following files:
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[Gdocs/app-1f40366346ac33eaa850.js
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[Gwarn ESLintError:
+/root/RLeapFROGS/src/components/choice.js
+  25:21  warning  A form label must be associated with a control
+jsx-a11y/label-has-associated-control
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+[2K[1A[2K[Gwarn ESLintError:
+/root/RLeapFROGS/src/components/exercise.js
+  20:85  warning  React Hook useCallback has a missing dependency:
+'setActiveExc'. Either include it or remove the dependency array
+react-hooks/exhaustive-deps
+  24:24  warning  React Hook useCallback does nothing when called with only one
+argument. Did you forget to pass an array of dependencies?
+react-hooks/exhaustive-deps
+  30:8   warning  React Hook useCallback has a missing dependency:
+'setCompleted'. Either include it or remove the dependency array
+react-hooks/exhaustive-deps
+  41:13  warning  Visible, non-interactive elements with click handlers must
+have at least one keyboard listener
+jsx-a11y/click-events-have-key-events
+  41:13  warning  Non-interactive elements should not be assigned mouse or
+keyboard event listeners
+jsx-a11y/no-noninteractive-element-interactions
+
+✖ 5 problems (0 errors, 5 warnings)
+  0 errors and 2 warnings potentially fixable with the `--fix` option.
+
+
+[2K[1A[2K[Gsuccess Building development bundle - 30.474s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.004s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.156s
+
+[2K[1A[2K[Gsuccess write out requires - 0.007s
+
+[2K[1A[2K[Gsuccess run page queries - 0.474s - 1/1 2.11/s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.003s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.177s
+
+[2K[1A[2K[Gsuccess write out requires - 0.009s
+
+[2K[1A[2K[Gsuccess run page queries - 0.039s - 1/1 25.65/s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.002s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.108s
+
+[2K[1A[2K[Gsuccess write out requires - 0.004s
+
+[2K[1A[2K[Gsuccess run page queries - 0.150s - 1/1 6.68/s
+
