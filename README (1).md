@@ -1,4 +1,4 @@
-# PaleoHack Introductory Materials
+# R Leap FROGS Interactive Tutorial
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LinkedEarth/ec_workshops_py/binder)
 [![DOI](https://zenodo.org/badge/461037174.svg)](https://zenodo.org/badge/latestdoi/461037174)
@@ -38,131 +38,46 @@ If you would like to create your website using this repository as a base.
 
 Instructions taken from [Course Starter](https://ines.github.io/course-starter-python/#creating-your-website-by-installing-dependencies)
 
-**Mac instructions**
+Mac Instructions can be found [here](https://github.com/LinkedEarth/ec_workshops_py)
 
-1. Make sure that you have [Homebrew](https://docs.brew.sh/Installation) installed in order to download Node
+**Linux Instructions**
 
-  **The most important part of this installation is making sure that you are running some version of 10**
+1. Fork this repository. Then clone it locally.
 
-2. Check if you have Node installed already by using the command :
+2. This course was developed using Node v10, which can now only be installed from source
 ```
+sudo curl -o node10.tar.gz https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz
+sudo apt update
+sudo tar -xvf node10.tar.gz
+sudo cp -r node-v10.18.0-linux-x64/{bin,include,lib,share} /usr/
+export PATH=/usr/node-v10.18.0-linux-x64/bin:$PATH
 node --version
+npm --version
+```
+You should see the "10.18.0" and "6.13.4" returned for node and npm respectively
+
+
+3. Now install the gatsby client, specifying an older verison
+```
+npm i gatsby-cli@2.16.0-create-gatsby.2
+```
+If this produces a package-lock.json file in your directory, delete it
+```
+rm package-lock.josn
 ```
 
-If that produces an error then you can simply download version 10 with the following command:
-```
-brew install node@10
-```
-
-If it’s a version other than 10, you will need to downgrade/upgrade to version 10 - or Gatsby will not be able to start a development server or build a page.
-
-To change to version 10, follow the following commands:
-```
-brew search node
-```
-This will give you an output similar to this:
-
-~~~out
-==> Formulae
-libbitcoin-node   node-build     node@12       nodeenv
-llnode       node-sass      node_exporter    nodenv
-node ✓       node@10       nodebrew
-~~~
-
-Next, you will want to install version 10 with the command:
-
-~~~bash
-brew install node@10
-~~~
-
-if the checkmark is currently on node we then unlink node from its current version first using:
-```
-brew unlink node
-```
-
-Then, link version 10 that was just installed:
-```
-brew link node@10
-```
-
-You may also be prompted to specify that you need to have node@10 first in your PATH so you should run the command below before attempting force linking node@10 (the command above) again:
-
-```
-echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.bash_profile
-```
-
-
-Sometimes, linking to node@10 will need to be forced and thus will require:
-```
-brew link --force --overwrite node@10
-```
-
-Next check again what version you are running to confirm that it is a version of 10. there is a possibility that an error will be produced so you can either permanently set your
-
-```
-node --version
-```
-
-this should output the following:
-
-~~~out
-v10.24.1
-~~~
-
-Now that we have this done, Gatsby’s installation and building process should be much easier.
-
-Install Gatsby
-
-This should a single command to complete this and will install Gatsby globally on your computer.
-~~~
-npm install -g gatsby-cli
-~~~
-
-**Warning:** Do not update your dependencies here.
-
-3. Fork the repository. Then clone it locally.
-
-4. On your terminal, locate yourself to the root of the repo.
-
-5. In order to run on local server, we must install all relevant dependencies by running the following:
+4. Now you are ready to install the node dependencies
 ```
 npm install
 ```
-**Warning:** You will be prompted to run "npm audit fix" to fix them.
-I do not recommend doing this as it may burn your site down.
 
-
-During the build, you might see several ESLint errors. We are trying to fix them.
-However, the output below will still build your course:
-
-~~~out
-found 572 vulnerabilities (4 low, 4 moderate, 564 high)
-~~~
-
-6. Finally, to build the site on your local:
-
+5. Finally, deploy the site locally
 ```
-npm run dev  
+nohup npm run dev &
+ping http://localhost:8000/
 ```
 
-Delivering this as an output (copy and paste this address into any browser) :
-
-~~~out
-You can now view ec_workshops_py in the browser.
-
-  http://localhost:8000/
-~~~
-
-Quick link: http://localhost:8000/
-
-This should be the beginning of a functioning starter-course!
-
-Now that you have a website that is deploying on your local server, we can now begin the steps to customize it to your own taste.
-
-### Release the docs
-
-Build the website locally for GitHub release:
-
+And build the website locally for GitHub release:
 ```
 npm run build  
 ```
