@@ -4,6 +4,8 @@
 
 [![example workflow](https://github.com/throughput-ec/ec-workshops/actions/workflows/gatsby-publish.yaml/badge.svg)](https://github.com/throughput-ec/ec-workshops/actions)
 
+## FROGS
+
 ## Objective
 
 This project aims to show some powerful use cases of Data Science tools in the Earth Sciences. 
