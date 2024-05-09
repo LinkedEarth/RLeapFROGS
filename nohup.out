@@ -220,3 +220,169 @@ jsx-a11y/no-noninteractive-element-interactions
 
 [2K[1A[2K[Gsuccess run page queries - 0.150s - 1/1 6.68/s
 
+[2K[1A[2K[G
+ ERROR
+
+URI malformed
+
+
+[2K[1A[2K[G
+[0m
+[0m  [0m[97m[41mURIError[0m[37m[41m:[0m[37m[41m [0m[97m[41mURI malformed[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[37mdecodeURIComponent[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mgatsby-node.js[0m[90m:[0m[93m54[0m[37m [0m[37mapp.use[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[gatsby-plugin-sharp]/gatsby-node.js:54:24[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mlayer.js[0m[90m:[0m[93m95[0m[37m [0m[37mLayer.handle [as handle_request][0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/layer.js:95:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m328[0m[37m [0m[37mtrim_prefix[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:328:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m286[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:286:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m346[0m[37m [0m[37mFunction.process_params[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:346:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m280[0m[37m [0m[37mnext[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:280:10[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m40[0m[37m [0m[37mready[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:40:21[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mutil.js[0m[90m:[0m[93m53[0m[37m [0m[37mready[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/util.js:53:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m32[0m[37m [0m[37mPromise[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:32:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[37mnew Promise[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m31[0m[37m [0m[37mgoNext[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:31:14[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m92[0m[37m [0m[37mprocessRequest[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:92:26[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mutil.js[0m[90m:[0m[93m53[0m[37m [0m[37mready[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/util.js:53:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mutil.js[0m[90m:[0m[93m182[0m[37m [0m[37mhandleRequest[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/util.js:182:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m64[0m[37m [0m[37mPromise[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:64:7[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[37mnew Promise[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m63[0m[37m [0m[37mmiddleware[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-dev-middleware]/lib/middleware.js:63:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mlayer.js[0m[90m:[0m[93m95[0m[37m [0m[37mLayer.handle [as handle_request][0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/layer.js:95:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m328[0m[37m [0m[37mtrim_prefix[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:328:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m286[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:286:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m346[0m[37m [0m[37mFunction.process_params[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:346:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m280[0m[37m [0m[37mnext[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:280:10[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m121[0m[37m [0m[37mSendStream.error[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[serve-static]/index.js:121:7[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m270[0m[37m [0m[37mSendStream.error[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[send]/index.js:270:17[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m516[0m[37m [0m[37mSendStream.pipe[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[send]/index.js:516:10[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m125[0m[37m [0m[37mexpressStatic[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[serve-static]/index.js:125:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mdevelop-static.ts[0m[90m:[0m[93m25[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[gatsby]/src/commands/develop-static.ts:25:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mlayer.js[0m[90m:[0m[93m95[0m[37m [0m[37mLayer.handle [as handle_request][0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/layer.js:95:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m328[0m[37m [0m[37mtrim_prefix[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:328:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m286[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:286:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m346[0m[37m [0m[37mFunction.process_params[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:346:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m280[0m[37m [0m[37mnext[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:280:10[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m188[0m[37m [0m[37mcors[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:188:7[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m224[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:224:17[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m214[0m[37m [0m[37moriginCallback[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:214:15[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m219[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:219:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m199[0m[37m [0m[37moptionsCallback[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:199:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m204[0m[37m [0m[37mcorsMiddleware[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[cors]/lib/index.js:204:7[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mlayer.js[0m[90m:[0m[93m95[0m[37m [0m[37mLayer.handle [as handle_request][0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/layer.js:95:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m328[0m[37m [0m[37mtrim_prefix[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:328:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m286[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:286:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m346[0m[37m [0m[37mFunction.process_params[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:346:12[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m280[0m[37m [0m[37mnext[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:280:10[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mmiddleware.js[0m[90m:[0m[93m46[0m[37m [0m[37mmiddleware[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[webpack-hot-middleware]/middleware.js:46:48[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mlayer.js[0m[90m:[0m[93m95[0m[37m [0m[37mLayer.handle [as handle_request][0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/layer.js:95:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m328[0m[37m [0m[37mtrim_prefix[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:328:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m286[0m[37m [0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:286:9[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mindex.js[0m[90m:[0m[93m346[0m[37m [0m[37mFunction.process_params[0m
+[0m  [0m  [0m[90m[RLeapFROGS]/[express]/lib/router/index.js:346:12[0m
+[0m  [0m
+[0m
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! ec-workshops@0.0.1 dev: `gatsby develop`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the ec-workshops@0.0.1 dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2024-04-23T14_45_58_026Z-debug.log
