@@ -6,6 +6,8 @@
 
 ## FROGS
 
+FROGS is
+
 ## Objective
 
 This project aims to show some powerful use cases of Data Science tools in the Earth Sciences. 
