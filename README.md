@@ -6,7 +6,7 @@
 
 ## FROGS
 
-FROGS is
+FROGS is a NSF-funded project. 
 
 ## Objective
 
