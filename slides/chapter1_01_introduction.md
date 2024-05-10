@@ -3,6 +3,8 @@ type: slides
 ---
 
 <div><h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png" alt="R Logo" width=25% align="left"/> Lesson 1<br>Introduction R and RStudio</h1></div>
+<br><br><br><br><br><br>
+
 ---
 
 # What is R?
@@ -14,13 +16,13 @@ For this workshop, we will be using R via [RStudio]([https://jupyter.org/index.h
 ---
 
 [RMarkdown](https://bookdown.org/yihui/rmarkdown-cookbook/) are a great tool for exploration and for documenting your workflow.
-Notebooks allow you to write:
+Markdown documents allow you to write:
 - Code
 - Plots
 - Formatted text
 - Latex text for equations
 
-and much more in a single document!
+and much more in a single document! These documents allow can then be rendered and shared as HTML web pages.
 
 See some examples of what's possible on [RPubs](https://rpubs.com/)
 
@@ -30,9 +32,11 @@ See some examples of what's possible on [RPubs](https://rpubs.com/)
 
 - RStudio is an integrated development environment (IDE) that provides an interface by adding convenient features and tools.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png" alt="R logo" width="25%" align="center">
+<br>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1920px-RStudio_logo_flat.svg.png" alt="RStudio logo" width="25%" align="center">
+<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1920px-RStudio_logo_flat.svg.png" alt="RStudio logo" width="25%" align="left"></div>
+
+<br><br><br><br>
 
 ---
 
@@ -54,6 +58,14 @@ RStudio will allow us to:
 This is what the Rstudio interface looks like:
 
 <img src="https://biocorecrg.github.io/CRG_RIntroduction/images/rstudio_interface.png" alt="RStudio Interface shot" width=75% align="center">
+
+---
+
+Aside from the easy and powerful interface, the extensive and well-currated archive of packages is a major attraction for potential R users. Conflicts between packages that cause unexpected behavior and failing code is very rare in R.
+
+The Comprehensive R Archive Network ([CRAN](https://cran.r-project.org/)) is the primary source for R packages.
+
+[Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software) is an alternative archive, primarily for bioinformatics.
 
 ---
 
