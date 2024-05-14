@@ -19,22 +19,17 @@ export default ({ data }) => {
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
             <section>
 
-                <h1 className={classes.subtitle}><center>Welcome to EarthCube Interactive Workshops!</center></h1>
+                <h1 className={classes.subtitle}><center>Welcome to LeapFROGS - A platform for FAIR science practice and publishing</center></h1>
                 <div className={classes.introduction}>
                 <p></p>
 
                 <center>
                 <p>
-                    These short courses will teach you how to conduct reproducible 
-                    research using Data Sciences tools.  
-
-                    You will be working with R Markdown, Docker containerization,
-                    and Git for version control.  
+                    Sharing research data, software, and workflow is fundamental to building a Findable, Accessible, Interoperable, and Reusable (FAIR) open science ecosystem. Indeed, over the past decade, funders and publishers have introduced open science policies emphasizing reproducibility, recognizing increased frameworks that support the sharing of reproducible science products. 
                 </p>
                 <p>
-                    After these modules, you will be able to process your own research
-                    in a format suitable for analysis, writing your own analysis functions,
-                    and deriving data-driven insights via RMarkdown files and Jupyter Notebooks.
+                    LeapFROGS is a free online platofrm that curates lecture materials on science practice and publishing, along with interactive, self-graded exercises to create self-paced learning modules on various aspects of scienctific research. After you have completed these modules, you will be able to use Python and R more effectively for your research and publish all artifacts of your research according to FAIR principles. 
+
                 </p>
                 </center>
                 </div>
