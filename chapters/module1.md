@@ -8,15 +8,7 @@ next: /module2
 type: chapter
 id: 1
 ---
-<exercise id="1" title="Getting Started with Python">
-
-[Getting Started](https://foundations.projectpythia.org/foundations/getting-started-python.html)
-
-</exercise>
-
-<exercise id="2" title="Getting Started with Jupyter">
-
-[Getting Started](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html)
-
+<exercise id="1" title="Why learning about Scientific Publishing?" type="slides">
+<slides source="chapter1_01_inroduction.md">
 </exercise>
 
