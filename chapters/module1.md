@@ -13,7 +13,7 @@ id: 1
 
 <p>Random Text</p>
 
-<slides source="chapter1_01_introduction.md">
+<slides source="chapter1_01_introduction">
 
 </exercise>
 
