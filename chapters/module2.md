@@ -10,7 +10,7 @@ id: 2
 
 <exercise id="0" title="Opening Rstudio" type="slides">
 
-<slides source="chapter5_01_introduction_to_Rstudio.md">
+<slides source="chapter5_01_introduction_to_Rstudio">
 </slides>
 
 </exercise>
