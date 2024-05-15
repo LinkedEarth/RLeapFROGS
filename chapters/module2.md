@@ -15,10 +15,16 @@ id: 2
 
 </exercise>
 
-<exercise id="1" title="R Code" type="slides">
+<exercise id="1" title="A Data Frame">
 
-<slides source="chapter7_01_filenames">
-</slides>
+Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
+
+Data frames store data in two dimensions with column names and optional row names. mtcars is a data frame distributed with the basic R installation.
+
+A popular package for manipulating data frames is dplyr.
+
+<codeblock id="02_01">
+</codeblock>
 
 </exercise>
 
