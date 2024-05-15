@@ -70,11 +70,17 @@ The Comprehensive R Archive Network ([CRAN](https://cran.r-project.org/)) is the
 ---
 
 - The RStudio IDE makes interactive programming intuitive
-- R Markdown is a get way to share your work
+- R Markdown is a great way to share your work
 - Scientific programming packages for R are managed by a central repository that makes package management seamless
 
 ---
 
 # Let's get started!
+
+Download and Install (make sure to install R before RStudio):
+
+1. [R](https://www.r-project.org/)
+
+2. [RStudio](https://posit.co/download/rstudio-desktop/)
 
 ---
