@@ -11,6 +11,8 @@ id: 1
 
 <exercise id="1" title="R and RStudio" type="slides">
 
+<p>Random Text</p>
+
 <slides source="chapter1_01_introduction.md">
 
 </exercise>
