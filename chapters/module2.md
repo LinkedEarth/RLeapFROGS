@@ -26,7 +26,7 @@ This includes functioning as a simple calculator.
 
 </exercise>
 
-<exercise id="1" title="The R console">
+<exercise id="2" title="R classes">
 
 R is a high-level language. In order to performcomplex tasks with little code, R makes lots of assumptions. This includes automated classification of inputs
 
@@ -36,7 +36,7 @@ R is a high-level language. In order to performcomplex tasks with little code, R
 </exercise>
 
 
-<exercise id="2" title="A Data Frame">
+<exercise id="17" title="A Data Frame">
 
 Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
 
