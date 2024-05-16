@@ -13,14 +13,6 @@ type: slides
 
 ---
 
-## Opening RStudio
-
-If you open *RStudio* you will encounter the following screen:
-
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_rstudio.png?raw=true" alt="Binder" width=45% align="center">
-
----
-
 ## Running Rscripts in RStudio
 
 - Creating a new R script: 
