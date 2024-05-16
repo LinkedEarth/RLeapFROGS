@@ -24,6 +24,8 @@ This includes functioning as a simple calculator.
 <codeblock id="02_01">
 </codeblock>
 
+You can see that R is a pretty good calculator. All of the functionality of a scientific calculator is built in to base R.
+
 </exercise>
 
 <exercise id="2" title="R classes">
@@ -32,6 +34,8 @@ R is a high-level language. In order to performcomplex tasks with little code, R
 
 <codeblock id="02_02">
 </codeblock>
+
+These examples will give you some starting assumptions. Typing an unquoted number into the console will give a "numeric" classification, while quoted numbers become "characters". "integer" objects are assigned explicity.
 
 </exercise>
 
