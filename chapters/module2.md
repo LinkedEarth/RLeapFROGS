@@ -15,7 +15,28 @@ id: 2
 
 </exercise>
 
-<exercise id="1" title="A Data Frame">
+<exercise id="1" title="The R console">
+
+The R console can be used to evaluate any R code.
+
+This includes functioning as a simple calculator.
+
+<codeblock id="02_01">
+</codeblock>
+
+</exercise>
+
+<exercise id="1" title="The R console">
+
+R is a high-level language. In order to performcomplex tasks with little code, R makes lots of assumptions. This includes automated classification of inputs
+
+<codeblock id="02_02">
+</codeblock>
+
+</exercise>
+
+
+<exercise id="2" title="A Data Frame">
 
 Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
 
@@ -23,7 +44,7 @@ Data frames store data in two dimensions with column names and optional row name
 
 A popular package for manipulating data frames is dplyr.
 
-<codeblock id="05_01">
+<codeblock id="02_17">
 </codeblock>
 
 </exercise>
