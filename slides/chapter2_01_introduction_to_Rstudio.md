@@ -6,17 +6,9 @@ type: slides
 
 ---
 
-# What is RStudio?
+# Still haven't gotten RStudio up and running?
 
-RStudio is an IDE (integrated development environment) mainly used for R.
-
-It includes tools for:
-- linting
-- code completion
-- debugging.
-
-You can also work with Rmd files which enable a notebook-like functionality.
-You can use other language engines, such as Python.
+[Here's a short tutorial](https://rstudio-education.github.io/hopr/starting.html)
 
 ---
 
@@ -29,8 +21,6 @@ If you open *RStudio* you will encounter the following screen:
 ---
 
 ## Running Rscripts in RStudio
-
-- Launch this [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-binder/main?urlpath=rstudio) in a new tab and follow these steps:
 
 - Creating a new R script: 
   * From the menu clcik on: 
@@ -88,7 +78,7 @@ You can find out where you are by:
 
 ## Setting your Working Directory
 
-Set your working directory to the root directory of the Git repository you are working in!
+Set your working directory to the root directory of the Git repository you are working in (we'll talk about Git and Github later)!
 
 You can set the working directory using the following 3 ways:
 
