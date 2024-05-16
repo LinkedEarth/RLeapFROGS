@@ -82,6 +82,12 @@ We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value. I
 
 Notice that our new parameter triggers an 'if' switch, which in turn determines the type of output returned by the function.
 
+'letters' is a built-in variable, a vector of the 26 letters of the alphabet. 'tolower()' is a function that takes letters and returns the lower-case equivalent.
+
+comparing 'letters' with the first letter of the input 'string' using the '==' operator returns a set of 26 boolean values
+
+the function 'which()' tells us which of the 26 boolean values are 'TRUE', and as 'z' is the 26th letter of the alphabet, we get 26
+
 </exercise>
 
 
