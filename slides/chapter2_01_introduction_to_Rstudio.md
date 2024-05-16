@@ -2,7 +2,8 @@
 type: slides
 ---
 
-<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 1<br>Introduction to RStudio</h1></div>
+<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1920px-RStudio_logo_flat.svg.png" alt="RStudio logo" width="25%" align="left"></div>
+<br><br><br><br>
 
 ---
 
