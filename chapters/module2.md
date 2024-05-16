@@ -69,6 +69,21 @@ Writing functions is simple, but requires a specific syntax.
 
 </exercise>
 
+<exercise id="4" title="R functions (cont)">
+
+Let's expand our function by adding a new parameter.
+
+Suppose were are tring to alphabetize our strings, so we sometimes use this new function to return the place in the alphabet of the first letter of our string.
+
+We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value. If 'place' is set to TRUE, 
+
+<codeblock id="02_05">
+</codeblock>
+
+Notice that our new parameter triggers an 'if' switch, which in turn determines the type of output returned by the function.
+
+</exercise>
+
 
 <exercise id="17" title="A Data Frame">
 
