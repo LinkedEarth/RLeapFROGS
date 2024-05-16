@@ -2,35 +2,18 @@
 type: slides
 ---
 
-<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 1<br>Introduction to RStudio</h1></div>
+<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1920px-RStudio_logo_flat.svg.png" alt="RStudio logo" width="25%" align="left"></div>
+<br><br><br><br>
 
 ---
 
-# What is RStudio?
+# Still haven't gotten RStudio up and running?
 
-RStudio is an IDE (integrated development environment) mainly used for R.
-
-It includes tools for:
-- linting
-- code completion
-- debugging.
-
-You can also work with Rmd files which enable a notebook-like functionality.
-You can use other language engines, such as Python.
-
----
-
-## Opening RStudio
-
-If you open *RStudio* you will encounter the following screen:
-
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module4/00_rstudio.png?raw=true" alt="Binder" width=45% align="center">
+[Here's a short tutorial](https://rstudio-education.github.io/hopr/starting.html)
 
 ---
 
 ## Running Rscripts in RStudio
-
-- Launch this [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-binder/main?urlpath=rstudio) in a new tab and follow these steps:
 
 - Creating a new R script: 
   * From the menu clcik on: 
@@ -43,6 +26,8 @@ If you open *RStudio* you will encounter the following screen:
 
 - Run your code clicking on the "Source" button (upper right-hand side) to run the entire document.
 - To run a single line, type Ctrl+Enter (Command+Return) to run the current line or highlighted code
+
+<div><img src="static/module2/LeapFROGS_02_01_Rstudio_screenshot.png" alt="RStudio screenshot" width="25%" align="left"></div>
 
 --
 
@@ -88,7 +73,7 @@ You can find out where you are by:
 
 ## Setting your Working Directory
 
-Set your working directory to the root directory of the Git repository you are working in!
+Set your working directory to the root directory of the Git repository you are working in (we'll talk about Git and Github later)!
 
 You can set the working directory using the following 3 ways:
 
