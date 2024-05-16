@@ -7,3 +7,7 @@ is.integer(2)
 as.integer("5")
 
 is.integer(as.integer("5"))
+
+class(2)
+
+class("2")
