@@ -7,3 +7,5 @@ firstLetter <- function(string,place=FALSE){
 }
 
 firstLetter("zebra", place=TRUE)
+
+firstLetter("zebra")
