@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9abc5bc445caa2927732.js"
+    "url": "webpack-runtime-65a55ab1aeb784d9a2bf.js"
   },
   {
     "url": "styles.5a6587ba1a49c0f64a6c.css"
@@ -50,21 +50,29 @@ self.__precacheManifest = [
     "url": "e6d6ed13-f66b80e7d04ca230012c.js"
   },
   {
-    "url": "app-bd23226dc799ed46d7f6.js"
+    "url": "app-832c3f850215e046eda5.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-44ceac2081f421b30e8f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2db1603c98b379f000b53764c7ae6cf9"
+    "revision": "105f35c23761314ef02cc9636e460d59"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "c7047792c6f91b88e0d9abc0cd819e92"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "ac75ea442e2d4c8e231acb2917a7841e"
   },
   {
     "url": "polyfill-10416fb74ea7b340e982.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "776dc1c31fb21caf73905c786a4c15d5"
+    "revision": "e835230ee6b5ac6512894f42b1cac8b9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -83,12 +91,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/RLeapFROGS`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-bd23226dc799ed46d7f6.js`))) {
+  if (!resources || !(await caches.match(`/RLeapFROGS/app-832c3f850215e046eda5.js`))) {
     return await fetch(event.request)
   }
 
@@ -101,7 +109,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/RLeapFROGS/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
