@@ -13,7 +13,7 @@
         "branch": "binder",
         "lang": "r",
         "kernelType": "ir",
-        "debug": false
+        "debug": true
     },
     "showProfileImage": true,
     "footerLinks": [
