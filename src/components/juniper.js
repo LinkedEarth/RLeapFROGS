@@ -110,7 +110,7 @@ class Juniper extends React.Component {
      * @returns {Promise} - Resolved with Binder settings, rejected with Error.
      */
     requestBinder(repo, branch, url) {
-        const binderUrl = `${url}/build/gh/${repo}/${branch}`
+        const binderUrl = `${url}/build/gh/${repo}/${branch}/main`
         this.log(() => console.info('building', { binderUrl }))
         return new Promise((resolve, reject) => {
             const es = new EventSource(binderUrl)
