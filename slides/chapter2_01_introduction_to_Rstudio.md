@@ -27,6 +27,8 @@ type: slides
 - Run your code clicking on the "Source" button (upper right-hand side) to run the entire document.
 - To run a single line, type Ctrl+Enter (Command+Return) to run the current line or highlighted code
 
+<div><img src="static/module2/LeapFROGS_02_01_Rstudio_screenshot.png" alt="RStudio screenshot" width="25%" align="left"></div>
+
 --
 
 ## Code output
