@@ -39,17 +39,30 @@ This includes automated classification of inputs
 
 These examples will give you some starting assumptions. 
 
-Typing an unquoted number into the console will give a "numeric" classification, while quoted numbers become "characters". "integer" objects are assigned explicity.
+Typing an unquoted number into the console will give a 'numeric' classification, while quoted numbers become 'characters'. 'integer' objects are assigned explicity.
 
 </exercise>
 
-<exercise id="2" title="R functions">
+<exercise id="3" title="value assignment">
+
+Assignment in R is performed primarily with the following operator "<-", wherein an object is assigned a value such as 'a <- 1'
+
+<codeblock id="02_03">
+</codeblock>
+
+After we assigned letters to the objects 'a', 'b', and 'c', the function 'c()' combined them to form a vector of length 3.
+
+</exercise>
+
+<exercise id="4" title="R functions">
 
 R is a functional programming languange. Objects are created and altered by applying functions.
 
 Functions accept a set of paramters, often called arguments.
 
-<codeblock id="02_03">
+Writing functions is simple, but requires a specific syntax.
+
+<codeblock id="02_04">
 </codeblock>
 
 Writing functions is simple, but requires a specific syntax.
