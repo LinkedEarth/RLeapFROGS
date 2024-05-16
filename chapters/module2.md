@@ -88,6 +88,8 @@ comparing 'letters' with the first letter of the input 'string' using the '==' o
 
 the function 'which()' tells us which of the 26 boolean values are 'TRUE', and as 'z' is the 26th letter of the alphabet, we get 26
 
+If we do not provide the 'place' argument, the default value of 'FALSE' is used, so we get the letter, 'z' in this case
+
 </exercise>
 
 
