@@ -58,13 +58,22 @@ Read more about [assignment in R](https://stat.ethz.ch/R-manual/R-patched/librar
 
 </exercise>
 
+<exercise id="3.1" title="an R project" type="slides">
+
+Now that we've explored some of the basics from the console, let's create an R project to house our work
+
+<slides source="chapter5_04_R_project">
+</slides>
+
+</exercise>
+
 <exercise id="4" title="R functions">
+
+If you have successfully initiated a new R project, 
 
 R is a functional programming languange. Objects are created and altered by applying functions.
 
 Functions accept a set of paramters, often called arguments.
-
-Writing functions is simple, but requires a specific syntax.
 
 <codeblock id="02_04">
 </codeblock>
@@ -73,7 +82,7 @@ Writing functions is simple, but requires a specific syntax.
 
 </exercise>
 
-<exercise id="4" title="R functions (cont)">
+<exercise id="5" title="R functions (cont)">
 
 Let's expand our function by adding a new parameter.
 
