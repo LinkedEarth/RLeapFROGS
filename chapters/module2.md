@@ -41,6 +41,8 @@ These examples will give you some starting assumptions.
 
 Typing an unquoted number into the console will give a 'numeric' classification, while quoted numbers become 'characters'. 'integer' objects are assigned explicity.
 
+Read more about [classes](https://stat.ethz.ch/R-manual/R-devel/library/base/html/class.html)
+
 </exercise>
 
 <exercise id="3" title="value assignment">
@@ -51,6 +53,8 @@ Assignment in R is performed primarily with the following operator "<-", wherein
 </codeblock>
 
 After we assigned letters to the objects 'a', 'b', and 'c', the function 'c()' combined them to form a vector of length 3.
+
+Read more about [assignment in R](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
 
 </exercise>
 
@@ -75,7 +79,7 @@ Let's expand our function by adding a new parameter.
 
 Suppose were are tring to alphabetize our strings, so we sometimes use this new function to return the place in the alphabet of the first letter of our string.
 
-We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value. If 'place' is set to TRUE, 
+We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value.
 
 <codeblock id="02_05">
 </codeblock>
@@ -90,6 +94,8 @@ the function 'which()' tells us which of the 26 boolean values are 'TRUE', and a
 
 If we do not provide the 'place' argument, the default value of 'FALSE' is used, so we get the letter, 'z' in this case
 
+Read more about [functions](https://r4ds.had.co.nz/functions.html)
+
 </exercise>
 
 
@@ -103,6 +109,8 @@ A popular package for manipulating data frames is dplyr.
 
 <codeblock id="02_17">
 </codeblock>
+
+See more [data frame manipulation techniques from dpylr](https://dplyr.tidyverse.org/)
 
 </exercise>
 
