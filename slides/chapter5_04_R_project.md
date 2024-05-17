@@ -130,7 +130,7 @@ where `data/`, `results/`, and `scripts/` are directories as well.
 
 ---
 
-##Initialize a project
+## Initialize a project
 
 Before moving on to the next exercise, create an R project to store all of your work. If you have successfully initiated a new R project, you will see the name of the project in the top right corner of the screen as well as the '.Rproj' file in the 'files' tab as seen below
 
