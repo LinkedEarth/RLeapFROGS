@@ -112,10 +112,16 @@ Read more about [functions](https://r4ds.had.co.nz/functions.html)
 
 </exercise>
 
-<exercise id="6" title="Comment your code" type="slides">
+<exercise id="6" title="Comment your code">
 
-<slides source="chapter2_06_comments">
-</slides>
+Adding comments to your code can help in debugging purposes or sharing your code with others
+
+Comments are added by using '#'
+
+The '#' does not need to come at the beging of a line, but everything on this line after the '#' will not be evaluated by R
+
+<codeblock id="02_06">
+</codeblock>
 
 </exercise>
 
