@@ -39,7 +39,7 @@ This includes automated classification of inputs
 
 These examples will give you some starting assumptions. 
 
-Typing an unquoted number into the console will give a 'numeric' classification, while quoted numbers become 'characters'. 'integer' objects are assigned explicity.
+Typing an unquoted number into the console will give a ```numeric``` classification, while quoted numbers become ```character``` objects. ```integer``` objects are assigned explicity.
 
 Read more about [classes](https://stat.ethz.ch/R-manual/R-devel/library/base/html/class.html)
 
@@ -47,12 +47,12 @@ Read more about [classes](https://stat.ethz.ch/R-manual/R-devel/library/base/htm
 
 <exercise id="3" title="value assignment">
 
-Assignment in R is performed primarily with the following operator "<-", wherein an object is assigned a value such as 'a <- 1'
+Assignment in R is performed primarily with the following operator ```<-```, wherein an object is assigned a value such as ```a <- 1```
 
 <codeblock id="02_03">
 </codeblock>
 
-After we assigned letters to the objects 'a', 'b', and 'c', the function 'c()' combined them to form a vector of length 3.
+After we assigned letters to the objects ```a```, ```b```, and ```c```, the function ```c()``` combined them to form a vector of length 3.
 
 Read more about [assignment in R](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
 
@@ -98,34 +98,35 @@ We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value.
 <codeblock id="02_05">
 </codeblock>
 
-Notice that our new parameter triggers an 'if' switch, which in turn determines the type of output returned by the function.
+Notice that our new parameter triggers an ```if``` switch, which in turn determines the type of output returned by the function.
 
-'letters' is a built-in variable, a vector of the 26 letters of the alphabet. 'tolower()' is a function that takes letters and returns the lower-case equivalent.
+```letters``` is a built-in variable, a vector of the 26 letters of the alphabet. ```tolower()``` is a function that takes letters and returns the lower-case equivalent.
 
-comparing 'letters' with the first letter of the input 'string' using the '==' operator returns a set of 26 boolean values
+comparing ```letters``` with the first letter of the input ```string``` using the ```==``` operator returns a set of 26 boolean values
 
-the function 'which()' tells us which of the 26 boolean values are 'TRUE', and as 'z' is the 26th letter of the alphabet, we get 26
+the function ```which()``` tells us which of the 26 boolean values are ```TRUE```, and as 'z' is the 26th letter of the alphabet, we get 26
 
-If we do not provide the 'place' argument, the default value of 'FALSE' is used, so we get the letter, 'z' in this case
+If we do not provide the ```place``` argument, the default value of ```FALSE``` is used, so we get the letter, 'z' in this case
 
 Read more about [functions](https://r4ds.had.co.nz/functions.html)
 
 </exercise>
 
+<exercise id="6" title="Comment your code">
 
-<exercise id="17" title="A Data Frame">
+Adding comments to your code can help in debugging purposes or sharing your code with others
 
-Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
+Comments are added by using ```#```
 
-Data frames store data in two dimensions with column names and optional row names. mtcars is a data frame distributed with the basic R installation.
+The ```#``` does not need to come at the beging of a line, but everything on this line after the ```#``` will not be evaluated by R
 
-A popular package for manipulating data frames is dplyr.
-
-<codeblock id="02_17">
+<codeblock id="02_06">
 </codeblock>
-
-See more [data frame manipulation techniques from dpylr](https://dplyr.tidyverse.org/)
 
 </exercise>
 
+<exercise id="7" title="Onward!">
 
+Okay, we have covered a lot of ground so far. Here's an additional resource to help: [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+
+</exercise>
