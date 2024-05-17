@@ -8,11 +8,11 @@ type: chapter
 id: 3
 ---
 
-<exercise id="1" title="A Time Series">
+<exercise id="1" title="What's a data frame?">
 
-In this module we will be working with a marine Oxygen isotope time series derived from a global compilation, called [LR04](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2004PA001071). 
+In this module we will be working with data frames which are included with the basic R installation including ```mtcars``` and ```iris```
 
-Let's start by plotting the data
+Let's have a summary look at ```iris```
 
 <codeblock id="03_01">
 </codeblock>
