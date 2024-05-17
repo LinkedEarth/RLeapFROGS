@@ -12,30 +12,35 @@ id: 3
 
 In this module we will be working with data frames which are included with the basic R installation including ```mtcars``` and ```iris```
 
-Let's have a summary look at ```iris```
-
-<codeblock id="03_01">
-</codeblock>
-
-In the above code, we use ```read.csv()``` to load the data. This function applies specific settings to a more generic function, ```read.table()``` which you may also find useful. Remember, you find out more about a function by simply typing ```?read.table()``` into your R console.
-
-We also use ggplot to visualize our time series. ggplot offers tremendous flexibility for data visualization and we will see a few more examples in this course. You can learn more about ggplot from the [free online book](https://ggplot2-book.org/).
-
-</exercise>
-
-<exercise id="2" title="dplyr">
-
-In the last module we loaded a csv file.
-
 Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
 
 Data frames store data in two dimensions with column names and optional row names.
 
-Let's alter our original data.
+Let's have a look at ```iris```
+
+<codeblock id="03_01">
+</codeblock>
+
+```class(iris)``` tells us we have a ```data.frame``` object
+
+```dim(iris)``` tells us we have 150 rows and 5 columns
+
+```head(iris)``` shows us the first few rows
+
+```summary(iris)``` provides summary statistics of each column
+
+```plot(iris)``` offers x-y scatter plots for each column pairing
+
+* Note: the functions ```summary()``` and ```plot()``` have specific functionality for data frames, but these functions operate differently for other object classes
+
+</exercise>
+
+<exercise id="2" title="indexing, filtering, etc">
+
+Let's do some basic manipulation to the ```iris``` data frame
 
 <codeblock id="03_02">
 </codeblock>
 
-Our new data frame ```lr04_interp``` covers a shorted time interval, but we now have a time serious with a 'regular sampling interval', annual in this case. This will allow us to do some particular analyses.
 
 </exercise>
