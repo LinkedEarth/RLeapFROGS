@@ -124,3 +124,9 @@ The ```#``` does not need to come at the beging of a line, but everything on thi
 </codeblock>
 
 </exercise>
+
+<exercise id="7" title="Onward!">
+
+Okay, we have covered a lot of ground so far. Here's an additional resource to help: [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+
+</exercise>
