@@ -29,4 +29,13 @@ In the last module we loaded a csv file.
 
 Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
 
-Data frames store data in two dimensions with column names and optional row names. 'mtcars' is a data frame distributed with the basic R installation.
+Data frames store data in two dimensions with column names and optional row names.
+
+Let's alter our original data.
+
+<codeblock id="03_02">
+</codeblock>
+
+Our new data frame ```lr04_interp``` covers a shorted time interval, but we now have a time serious with a 'regular sampling interval', annual in this case. This will allow us to do some particular analyses.
+
+</exercise>
