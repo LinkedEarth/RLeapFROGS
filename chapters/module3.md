@@ -42,5 +42,6 @@ Let's do some basic subsetting of the ```iris``` data frame
 <codeblock id="03_02">
 </codeblock>
 
+Okay, so subsetting is simple using the column index values. Since our data frames have 2 dimensions, we provide subset values as ```[row indices,column indices]```
 
 </exercise>
