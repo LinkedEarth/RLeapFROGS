@@ -37,7 +37,7 @@ Let's have a look at ```iris```
 
 <exercise id="2" title="indexing, filtering, etc">
 
-Let's do some basic manipulation to the ```iris``` data frame
+Let's do some basic subsetting of the ```iris``` data frame
 
 <codeblock id="03_02">
 </codeblock>
