@@ -29,7 +29,7 @@ type: slides
 
 <div><img src="static/module2/LeapFROGS_02_01_Rstudio_screenshot.png" alt="RStudio screenshot" width="25%" align="left"></div>
 
---
+---
 
 ## Code output
 
