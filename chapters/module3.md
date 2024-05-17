@@ -44,4 +44,25 @@ Let's do some basic subsetting of the ```iris``` data frame
 
 Okay, so subsetting is simple using the column index values. Since our data frames have 2 dimensions, we provide subset values as ```[row indices,column indices]```
 
+Subsetting gets a little cumbersome when we apply logical filters.
+
+In general, base R can be used for data frame manipulation, but it is verbose and difficult to read
+
+Let's try something different
+
+</exercise>
+
+<exercise id="3" title="dplyr">
+
+```dplyr``` is one of the most widely used R packages. Visit the [website](https://dplyr.tidyverse.org/) to learn more.
+
+Writing code for dpylr is a little different from what we've seen so far, but the interpretation is much more intuitive.
+
+Let's start by replicating what we did in the last exercise.
+
+<codeblock id="03_03">
+</codeblock>
+
+
+
 </exercise>
