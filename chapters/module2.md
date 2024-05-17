@@ -124,21 +124,3 @@ The '#' does not need to come at the beging of a line, but everything on this li
 </codeblock>
 
 </exercise>
-
-
-<exercise id="17" title="A Data Frame">
-
-Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
-
-Data frames store data in two dimensions with column names and optional row names. mtcars is a data frame distributed with the basic R installation.
-
-A popular package for manipulating data frames is dplyr.
-
-<codeblock id="02_17">
-</codeblock>
-
-See more [data frame manipulation techniques from dpylr](https://dplyr.tidyverse.org/)
-
-</exercise>
-
-
