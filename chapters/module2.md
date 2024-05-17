@@ -69,11 +69,16 @@ Now that we've explored some of the basics from the console, let's create an R p
 
 <exercise id="4" title="R functions">
 
-If you have successfully initiated a new R project, 
+If you have successfully initiated a new R project, you can add your first R script to the project to house the code you'll be writing.
+
+You can decide for yourself how many files to create and how to separate topics. Hopefully these scripts can serve as notes for you to reflect on later.
+
 
 R is a functional programming languange. Objects are created and altered by applying functions.
 
 Functions accept a set of paramters, often called arguments.
+
+Here's a first look at a simple function:
 
 <codeblock id="02_04">
 </codeblock>
