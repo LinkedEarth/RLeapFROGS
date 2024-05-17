@@ -112,6 +112,13 @@ Read more about [functions](https://r4ds.had.co.nz/functions.html)
 
 </exercise>
 
+<exercise id="6" title="Comment your code" type="slides">
+
+<slides source="chapter2_06_comments">
+</slides>
+
+</exercise>
+
 
 <exercise id="17" title="A Data Frame">
 
