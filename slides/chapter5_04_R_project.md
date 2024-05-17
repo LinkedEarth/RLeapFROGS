@@ -2,9 +2,6 @@
 type: slides
 ---
 
-<div><h1><img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module1/00_ec_slide1.png?raw=true" alt="EC Theme" width=25% align="left"/> Lesson 4<br>Creating an RStudio Project</h1></div>
-
----
 
 # What is an R Project?
 
@@ -130,6 +127,16 @@ where `data/`, `results/`, and `scripts/` are directories as well.
 - When you need to share an analysis, you can share the entire project over. 
 
 - This will keep the structure of your project.
+
+---
+
+##Initialize a project
+
+Before moving on to the next exercise, create an R project to store all of your work. If you have successfully initiated a new R project, you will see the name of the project in the top right corner of the screen as well as the '.Rproj' file in the 'files' tab as seen below
+
+![R project screenshot](https://github.com/LinkedEarth/RLeapFROGS/assets/112658177/0fcfb762-4bd9-43fc-9dbb-6b2a3cc2f452)
+
+* Note: this R project can be converted to an R package later. The R package has some additional functionality, particularly this makes sharing functions easier. Package development is beyond the scope of our course, but you can learn more from this [free online book](https://r-pkgs.org/).
 
 ---
 
