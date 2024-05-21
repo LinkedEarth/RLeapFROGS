@@ -69,11 +69,26 @@ This code is a bit easier to read, and as the operation get's more complex, the 
 
 <exercise id="3" title="dplyr (continued)">
 
-Let's take a more advanced case for ```dplyr```. Maybe we need subset by ```Sepal.Length```, convert ```Petal.Width``` to an exponential scale, and sort the data frame by ```Sepal.Width```
+Let's take a more advanced case for ```dplyr```. Maybe we need to subset by ```Sepal.Length``` values, convert ```Petal.Width``` to a logarithmic scale, sort the data frame by ```Sepal.Width```, and extract 3 columns of interest for plotting
 
 <codeblock id="03_04">
 </codeblock>
 
 That operation is accomplished with very little code, and it's very human-readable.
+
+These are the basic functions of dplyr, but they can be extended by adding any number of other functions. You might for example apply a more complex calculation that ```log()```. The extensibility of ```dplyr``` is immense.
+
+Thus far, we've been working with data frames, but the ```tibble``` is another useful class that improves the simple visualization toos for datasets, particularly as the size and dimensionality grows.
+
+</exercise>
+
+<exercise id="3" title="tidyr and tibble">
+
+THe ```tidyr``` package, alongside ```tibble```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
+
+<codeblock id="03_05">
+</codeblock>
+
+
 
 </exercise>
