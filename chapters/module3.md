@@ -67,7 +67,7 @@ This code is a bit easier to read, and as the operation get's more complex, the 
 
 </exercise>
 
-<exercise id="3" title="dplyr (continued)">
+<exercise id="4" title="dplyr (continued)">
 
 Let's take a more advanced case for ```dplyr```. Maybe we need to subset by ```Sepal.Length``` values, convert ```Petal.Width``` to a logarithmic scale, sort the data frame by ```Sepal.Width```, and extract 3 columns of interest for plotting
 
@@ -82,15 +82,30 @@ Thus far, we've been working with data frames, but the ```tibble``` is another u
 
 </exercise>
 
-<exercise id="3" title="tidyr and tibble">
+<exercise id="5" title="tidyr and tibble">
 
-THe ```tidyr``` package, alongside ```tibble```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
+The ```tibble``` package, alongside ```tidyr```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
 
 tibbles allow for a more complex data structure. For example, each cell of a column could contain a list. That list could be a single value, a vector, or another list. This offers the ability for nested data structures.
 
 <codeblock id="03_05">
 </codeblock>
 
+The ```print``` method for ```tibble``` offers more information in a compact format than the ```print``` method for ```data.frame```
 
+So, to read the code above:
+1) Start with the iris tibble
+2) subset the 3 columns of interest
+3) nest the sepal lengths and widths by species, such that we are left with only one row per species
+
+Well, I would call that pretty tidy. This dataset may not be too hard to digest in its original form, but you could imagine how helpful this could be for a 100,000 row dataset.
+
+</exercise>
+
+<exercise id="6" title="NEXT!">
+
+In the next module we'll use out newfound data manipulation skills to prepare data for plotting.
+
+Let's Viz!
 
 </exercise>
