@@ -3,10 +3,10 @@ title: 'Module 4: Introduction to Binder'
 description:
   'This module will teach you how to use the Binder properly guaranteeing reproducibility of your notebooks and repositories.
   '
-prev: /module3
-next: /module5
+prev: /module30
+next: /module50
 type: chapter
-id: 4
+id: 40
 ---
 
 <exercise id="0" title="Learning Outcomes" type="slides">
