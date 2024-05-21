@@ -17,8 +17,23 @@ first example
 <codeblock id="04_01">
 </codeblock>
 
-Okay, so not a lot of code there, but a reasonably nice plot comes out.
+Okay, so not a lot of code there. We get a reasonably nice plot though.
 
-Let's dive in deeper.
+Let's break down what's happening:
+
+* the function ```ggplot()``` accepts the arguments ```data``` and ```mapping```.
+* The first is self explanatory.
+* The ```mapping``` argument sets up a formatting for the data. In this case we have:
+  -  ```Sepal Width``` plotted on the x-axis,
+  -  ```Petal Length``` plotted on the y-axis, and
+  -  ```Species``` is mapped to the plot coloring.
+* This mapping will apply to any variety of plot we want to make.
+* Finally, we use the function ```geom_point()``` to make a scatter plot
+* Notice that ```geom_point``` is added with a ```+```. This is how we add layers to a ggplot object.
+  - In this case the base layer has all the necesary mapping information without any indication of a visualization method.
+  - The second layer assigns a method.
+* In the following exercises we will introduce many additional layers which allow much customization, but these two layers will generally exist (in various forms) for all ggplot objects 
+
+## Let's dive in deeper.
 
 </exercise>
