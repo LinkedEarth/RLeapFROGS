@@ -1,7 +1,7 @@
 ---
-title: 'Module 3: Data Frames'
+title: 'Module 3: Data Visualization'
 description:
-  'This module will teach you techniques for manipulating data frames.'
+  'This module will teach you techniques for data visualization using the ggplot2 package'
 prev: /module3
 next: /module5
 type: chapter
