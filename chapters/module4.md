@@ -12,7 +12,7 @@ id: 4
 
 In this module you'll learn the basics of ggplot2, a package for producing a wide array of data visualizations.
 
-first example
+There is an excellent free online book that you can refer to for more examples and explanantions [here](https://ggplot2-book.org/).
 
 <codeblock id="04_01">
 </codeblock>
