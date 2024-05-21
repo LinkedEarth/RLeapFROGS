@@ -8,11 +8,10 @@ type: chapter
 id: 4
 ---
 
-<exercise id="1" title="packge: ggplot2">
+<exercise id="1" title="packge: ggplot2" type="slides">
 
 In this module you'll learn the basics of ggplot2, a package for producing a wide array of data visualizations.
 
-<codeblock id="04_01">
-</codeblock>
+<slides source="chapter4_01_ggplot">
 
 </exercise>
