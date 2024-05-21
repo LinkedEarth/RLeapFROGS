@@ -35,7 +35,7 @@ Let's have a look at ```iris```
 
 </exercise>
 
-<exercise id="2" title="indexing, filtering, etc">
+<exercise id="2" title="subset a data frame">
 
 Let's do some basic subsetting of the ```iris``` data frame
 
@@ -44,7 +44,7 @@ Let's do some basic subsetting of the ```iris``` data frame
 
 Okay, so subsetting is simple using the column index values. Since our data frames have 2 dimensions, we provide subset values as ```[row indices,column indices]```
 
-Subsetting gets a little cumbersome when we apply logical filters.
+Subsetting gets a little cumbersome when we apply logical filters. ```iris$Sepal.Length < 4.9``` tells R to provide a vector of boolean responses such that we have a TRUE/FALSE for each value of ```Sepal.Length```.
 
 In general, base R can be used for data frame manipulation, but it is verbose and difficult to read
 
@@ -63,6 +63,49 @@ Let's start by replicating what we did in the last exercise.
 <codeblock id="03_03">
 </codeblock>
 
+This code is a bit easier to read, and as the operation get's more complex, the advantages of dplyr become incresingly apparent. Subseting, filtering, and data manipulation can be chained with the ```%>%``` (called the pipe operator).
 
+</exercise>
+
+<exercise id="4" title="dplyr (continued)">
+
+Let's take a more advanced case for ```dplyr```. Maybe we need to subset by ```Sepal.Length``` values, convert ```Petal.Width``` to a logarithmic scale, sort the data frame by ```Sepal.Width```, and extract 3 columns of interest for plotting
+
+<codeblock id="03_04">
+</codeblock>
+
+That operation is accomplished with very little code, and it's very human-readable.
+
+These are the basic functions of dplyr, but they can be extended by adding any number of other functions. You might for example apply a more complex calculation that ```log()```. The extensibility of ```dplyr``` is immense.
+
+Thus far, we've been working with data frames, but the ```tibble``` is another useful class that improves the simple visualization toos for datasets, particularly as the size and dimensionality grows.
+
+</exercise>
+
+<exercise id="5" title="tidyr and tibble">
+
+The ```tibble``` package, alongside ```tidyr```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
+
+tibbles allow for a more complex data structure. For example, each cell of a column could contain a list. That list could be a single value, a vector, or another list. This offers the ability for nested data structures.
+
+<codeblock id="03_05">
+</codeblock>
+
+The ```print``` method for ```tibble``` offers more information in a compact format than the ```print``` method for ```data.frame```
+
+So, to read the code above:
+1) Start with the iris tibble
+2) subset the 3 columns of interest
+3) nest the sepal lengths and widths by species, such that we are left with only one row per species
+
+Well, I would call that pretty tidy. This dataset may not be too hard to digest in its original form, but you could imagine how helpful this could be for a 100,000 row dataset.
+
+</exercise>
+
+<exercise id="6" title="NEXT!">
+
+In the next module we'll use out newfound data manipulation skills to prepare data for plotting.
+
+Let's Viz!
 
 </exercise>

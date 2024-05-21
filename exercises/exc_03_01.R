@@ -1,3 +1,5 @@
+class(iris)
+
 dim(iris)
 
 head(iris)
