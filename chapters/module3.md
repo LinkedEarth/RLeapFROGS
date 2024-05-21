@@ -35,7 +35,7 @@ Let's have a look at ```iris```
 
 </exercise>
 
-<exercise id="2" title="indexing, filtering, etc">
+<exercise id="2" title="subset a data frame">
 
 Let's do some basic subsetting of the ```iris``` data frame
 
@@ -44,7 +44,7 @@ Let's do some basic subsetting of the ```iris``` data frame
 
 Okay, so subsetting is simple using the column index values. Since our data frames have 2 dimensions, we provide subset values as ```[row indices,column indices]```
 
-Subsetting gets a little cumbersome when we apply logical filters.
+Subsetting gets a little cumbersome when we apply logical filters. ```iris$Sepal.Length < 4.9``` tells R to provide a vector of boolean responses such that we have a TRUE/FALSE for each value of ```Sepal.Length```.
 
 In general, base R can be used for data frame manipulation, but it is verbose and difficult to read
 
@@ -63,6 +63,17 @@ Let's start by replicating what we did in the last exercise.
 <codeblock id="03_03">
 </codeblock>
 
+This code is a bit easier to read, and as the operation get's more complex, the advantages of dplyr become incresingly apparent. Subseting, filtering, and data manipulation can be chained with the ```%>%``` (called the pipe operator).
 
+</exercise>
+
+<exercise id="3" title="dplyr (continued)">
+
+Let's take a more advanced case for ```dplyr```. Maybe we need subset by ```Sepal.Length```, convert ```Petal.Width``` to an exponential scale, and sort the data frame by ```Sepal.Width```
+
+<codeblock id="03_04">
+</codeblock>
+
+That operation is accomplished with very little code, and it's very human-readable.
 
 </exercise>
