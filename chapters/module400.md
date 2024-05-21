@@ -2,10 +2,10 @@
 title: 'Module 4: Spectral Analysis'
 description:
   'This module will help ou learn sprectral analysis in R'
-prev: /module3
-next: /module5
+prev: /module300
+next: /module500
 type: chapter
-id: 4
+id: 400
 ---
 
 <exercise id="1" title="A Time Series">
