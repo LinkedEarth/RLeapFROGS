@@ -86,6 +86,8 @@ Thus far, we've been working with data frames, but the ```tibble``` is another u
 
 THe ```tidyr``` package, alongside ```tibble```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
 
+tibbles allow for a more complex data structure. For example, each cell of a column could contain a list. That list could be a single value, a vector, or another list. This offers the ability for nested data structures.
+
 <codeblock id="03_05">
 </codeblock>
 
