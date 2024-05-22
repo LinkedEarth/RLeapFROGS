@@ -1,4 +1,4 @@
-library(tidyverse)
+suppressMessages(library(tidyverse))
 
 iris <- tibble(iris)
 
