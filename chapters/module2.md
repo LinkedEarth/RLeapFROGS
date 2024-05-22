@@ -191,6 +191,8 @@ Next, we'll reorganize the data for ggplot.
 
 We build this plot starting from the data frame. We use a "mollweide" projection. We also use ```theme()``` to manually move the legend beneath the map.
 
+Another new idea is ```scale_color_gradient()```. The options for using color in your plots are extensive. Here, we have a continuous gradient from grey to red with values assigned based on magnitude. 
+
 <codeblock id="04_04">
 </codeblock>
 
