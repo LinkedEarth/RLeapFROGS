@@ -140,8 +140,14 @@ First, let's make a time series. We will use the astrochron package for this, bu
 
 We'll create a 500-point time series with an even time step of 1 and first-order autocorrelation of 0.9.
 
+Additionally, let's make a second time series by adding some noice to the first.
+
+And before we do any plotting we'll reformat the data for ggplot. We can only assign one 'y aesthetic', so we need to use the function ```gather``` to reorganize our data.
+
 <codeblock id="04_02">
 </codeblock>
+
+
 
 </exercise>
 
