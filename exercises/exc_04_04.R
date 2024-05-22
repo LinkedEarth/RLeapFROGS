@@ -1,6 +1,7 @@
-libarary(mapproj)
-library(maps)
-library(tidyverse)
+suppressMessages(libarary(mapproj))
+suppressMessages(library(maps))
+suppressMessages(library(tidyverse))
+
 earthquakes = read.csv("https://raw.githubusercontent.com/LinkedEarth/RLeapFROGS/binder/public/module2/recent_earthquakes.csv")
 
 world_map = map_data("world") %>% 
