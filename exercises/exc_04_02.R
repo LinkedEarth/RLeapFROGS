@@ -19,6 +19,7 @@ series_cor <- cor(df1$A, df1$B)
 #Reorganize the data frame in long format for ggplot
 df2 <- df1 %>%
   gather(key="Series", value = "Value", A, B)
+head(df2)
 
 #initial plot
 ggplot(data = df2, mapping = aes(x=Time, y=Value, color=Series)) +
