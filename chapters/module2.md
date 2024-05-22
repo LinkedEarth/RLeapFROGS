@@ -175,6 +175,19 @@ We added 4 new lines (layers) to out ```ggplot```, and hopefully we've created a
 * ```geom_label()``` No we are adding an additional ```geom```, which also allows us to bring in a new data frame and/or new aesthetics. In this case we use the ```ts_labs``` data and manually assign where it is placed.
 * ```ggtitle()``` Finally, we add our title which was previously assigned to a variable, ```final_title```
 
+Let's do one more plot, a map.
+
+</exercise>
+
+<exercise id="8" title="maps">
+
+making maps in ggplot will often include an extension package. Leaflet is very useful and can provide interactivity for web pages. Here we'll build a static map
+
+<codeblock id="04_04">
+</codeblock>
+
 We'll see more plots from ggplot in the time series analysis tutorials. Meanwhile, find inspiration from an array of ggplot visulations [here](https://r-graph-gallery.com/).
+
+Next, we'll get into time series analysis. From here on we'll be largely focused on theory, so the code will be a little less central, but we will link totutorials in R for you to explore.
 
 </exercise>
