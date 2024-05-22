@@ -8,125 +8,98 @@ type: chapter
 id: 2
 ---
 
-<exercise id="0" title="Opening Rstudio" type="slides">
+<exercise id="1" title="What's a data frame?">
 
-<slides source="chapter2_01_introduction_to_Rstudio">
-</slides>
+In this module we will be working with data frames which are included with the basic R installation including ```mtcars``` and ```iris```
 
-</exercise>
+Data tables, which you may be accustomed to using as Excel spredsheets, are called data frames in R.
 
-<exercise id="1" title="The R console">
+Data frames store data in two dimensions with column names and optional row names.
 
-The R console can be used to evaluate any R code.
+Let's have a look at ```iris```
 
-This includes functioning as a simple calculator.
-
-<codeblock id="02_01">
+<codeblock id="03_01">
 </codeblock>
 
-You can see that R is a pretty good calculator. All of the functionality of a scientific calculator is built in to base R.
+```class(iris)``` tells us we have a ```data.frame``` object
+
+```dim(iris)``` tells us we have 150 rows and 5 columns
+
+```head(iris)``` shows us the first few rows
+
+```summary(iris)``` provides summary statistics of each column
+
+```plot(iris)``` offers x-y scatter plots for each column pairing
+
+* Note: the functions ```summary()``` and ```plot()``` have specific functionality for data frames, but these functions operate differently for other object classes
 
 </exercise>
 
-<exercise id="2" title="R classes">
+<exercise id="2" title="subset a data frame">
 
-R is a high-level language. In order to performcomplex tasks with little code, R makes lots of assumptions. 
+Let's do some basic subsetting of the ```iris``` data frame
 
-This includes automated classification of inputs
-
-<codeblock id="02_02">
+<codeblock id="03_02">
 </codeblock>
 
-These examples will give you some starting assumptions. 
+Okay, so subsetting is simple using the column index values. Since our data frames have 2 dimensions, we provide subset values as ```[row indices,column indices]```
 
-Typing an unquoted number into the console will give a ```numeric``` classification, while quoted numbers become ```character``` objects. ```integer``` objects are assigned explicity.
+Subsetting gets a little cumbersome when we apply logical filters. ```iris$Sepal.Length < 4.9``` tells R to provide a vector of boolean responses such that we have a TRUE/FALSE for each value of ```Sepal.Length```.
 
-Read more about [classes](https://stat.ethz.ch/R-manual/R-devel/library/base/html/class.html)
+In general, base R can be used for data frame manipulation, but it is verbose and difficult to read
+
+Let's try something different
 
 </exercise>
 
-<exercise id="3" title="value assignment">
+<exercise id="3" title="dplyr">
 
-Assignment in R is performed primarily with the following operator ```<-```, wherein an object is assigned a value such as ```a <- 1```
+```dplyr``` is one of the most widely used R packages. Visit the [website](https://dplyr.tidyverse.org/) to learn more.
 
-<codeblock id="02_03">
+Writing code for dpylr is a little different from what we've seen so far, but the interpretation is much more intuitive.
+
+Let's start by replicating what we did in the last exercise.
+
+<codeblock id="03_03">
 </codeblock>
 
-After we assigned letters to the objects ```a```, ```b```, and ```c```, the function ```c()``` combined them to form a vector of length 3.
-
-Read more about [assignment in R](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
+This code is a bit easier to read, and as the operation get's more complex, the advantages of dplyr become incresingly apparent. Subseting, filtering, and data manipulation can be chained with the ```%>%``` (called the pipe operator).
 
 </exercise>
 
-<exercise id="3.1" title="an R project" type="slides">
+<exercise id="4" title="dplyr (continued)">
 
-Now that we've explored some of the basics from the console, let's create an R project to house our work
+Let's take a more advanced case for ```dplyr```. Maybe we need to subset by ```Sepal.Length``` values, convert ```Petal.Width``` to a logarithmic scale, sort the data frame by ```Sepal.Width```, and extract 3 columns of interest for plotting
 
-<slides source="chapter5_04_R_project">
-</slides>
-
-</exercise>
-
-<exercise id="4" title="R functions">
-
-If you have successfully initiated a new R project, you can add your first R script to the project to house the code you'll be writing.
-
-You can decide for yourself how many files to create and how to separate topics. Hopefully these scripts can serve as notes for you to reflect on later.
-
-
-R is a functional programming languange. Objects are created and altered by applying functions.
-
-Functions accept a set of paramters, often called arguments.
-
-Here's a first look at a simple function:
-
-<codeblock id="02_04">
+<codeblock id="03_04">
 </codeblock>
 
-Writing functions is simple, but requires a specific syntax.
+That operation is accomplished with very little code, and it's very human-readable.
+
+These are the basic functions of dplyr, but they can be extended by adding any number of other functions. You might for example apply a more complex calculation that ```log()```. The extensibility of ```dplyr``` is immense.
+
+Thus far, we've been working with data frames, but the ```tibble``` is another useful class that improves the simple visualization toos for datasets, particularly as the size and dimensionality grows.
 
 </exercise>
 
-<exercise id="5" title="R functions (cont)">
+<exercise id="5" title="tidyr and tibble">
 
-Let's expand our function by adding a new parameter.
+The ```tibble``` package, alongside ```tidyr```, ```dplyr```, and ```ggplot2```, are all part of ```tidyverse```. This set of packages follow an inuitive underlying philosophy which make data science in R much easier. These packages are designed to work together, and the effort required to learn them will repay itself quickly with enhanced speed and quality in your code.
 
-Suppose were are tring to alphabetize our strings, so we sometimes use this new function to return the place in the alphabet of the first letter of our string.
+tibbles allow for a more complex data structure. For example, each cell of a column could contain a list. That list could be a single value, a vector, or another list. This offers the ability for nested data structures.
 
-We can add a new parameter, 'place', which takes a boolean (TRUE/FALSE) value.
-
-<codeblock id="02_05">
+<codeblock id="03_05">
 </codeblock>
 
-Notice that our new parameter triggers an ```if``` switch, which in turn determines the type of output returned by the function.
+The ```print``` method for ```tibble``` offers more information in a compact format than the ```print``` method for ```data.frame```
 
-```letters``` is a built-in variable, a vector of the 26 letters of the alphabet. ```tolower()``` is a function that takes letters and returns the lower-case equivalent.
+So, to read the code above:
+1) Start with the iris tibble
+2) subset the 3 columns of interest
+3) nest the sepal lengths and widths by species, such that we are left with only one row per species
 
-comparing ```letters``` with the first letter of the input ```string``` using the ```==``` operator returns a set of 26 boolean values
-
-the function ```which()``` tells us which of the 26 boolean values are ```TRUE```, and as 'z' is the 26th letter of the alphabet, we get 26
-
-If we do not provide the ```place``` argument, the default value of ```FALSE``` is used, so we get the letter, 'z' in this case
-
-Read more about [functions](https://r4ds.had.co.nz/functions.html)
+Well, I would call that pretty tidy. This dataset may not be too hard to digest in its original form, but you could imagine how helpful this could be for a 100,000 row dataset.
 
 </exercise>
 
-<exercise id="6" title="Comment your code">
 
-Adding comments to your code can help in debugging purposes or sharing your code with others
-
-Comments are added by using ```#```
-
-The ```#``` does not need to come at the beging of a line, but everything on this line after the ```#``` will not be evaluated by R
-
-<codeblock id="02_06">
-</codeblock>
-
-</exercise>
-
-<exercise id="7" title="Onward!">
-
-Okay, we have covered a lot of ground so far. Here's an additional resource to help: [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
-
-</exercise>
