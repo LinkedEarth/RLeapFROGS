@@ -1,3 +1,5 @@
+suppressMessages(library(tidyverse))
+  
 #load df2 from last exercise
 df2 <- read.csv("https://raw.githubusercontent.com/LinkedEarth/RLeapFROGS/main/public/module2/module2_df2.csv")
 

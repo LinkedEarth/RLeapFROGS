@@ -1,5 +1,5 @@
-library(astrochron)
-library(tidyverse)
+suppressMessages(library(astrochron))
+suppressMessages(library(tidyverse))
 
 #set seed (for reproducibility)
 set.seed(599)

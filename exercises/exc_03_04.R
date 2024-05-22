@@ -1,4 +1,4 @@
-library(dplyr)
+suppressMessages(library(dplyr))
 
 iris %>%
   filter(iris$Sepal.Length < 4.9) %>%
