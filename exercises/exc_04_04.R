@@ -1,3 +1,4 @@
+libarary(mapproj)
 library(maps)
 library(tidyverse)
 earthquakes = read.csv("https://raw.githubusercontent.com/LinkedEarth/RLeapFROGS/binder/public/module2/recent_earthquakes.csv")
