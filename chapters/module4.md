@@ -34,6 +34,19 @@ Let's break down what's happening:
   - The second layer assigns a method.
 * In the following exercises we will introduce many additional layers which allow much customization, but these two layers will generally exist (in various forms) for all ggplot objects 
 
-## Let's dive in deeper.
+Let's dive in deeper.
+
+</exercise>
+
+<exercise id="1" title="geom_line()">
+
+As this course is focused on time series, most of our visulaization examples will include lines. We'll throw in a couple of other examples as well for summarizing other data types.
+
+First, let's make a time series. We will use the astrochron package for this, but you could choose from many other options.
+
+We'll create a 500-point time series with an even time step of 1 and first-order autocorrelation of 0.9.
+
+<codeblock id="04_02">
+</codeblock>
 
 </exercise>
