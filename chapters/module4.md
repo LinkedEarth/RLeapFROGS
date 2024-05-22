@@ -10,7 +10,7 @@ id: 4
 
 <exercise id="1" title="packge: ggplot2">
 
-In this module you'll learn the basics of ggplot2, a package for producing a wide array of data visualizations.
+In this module you'll learn the basics of ggplot2, a package for producing a wide array of data visualizations. This is not a complete guide, merely an introduction to the package.
 
 There is an excellent free online book that you can refer to for more examples and explanantions [here](https://ggplot2-book.org/).
 
