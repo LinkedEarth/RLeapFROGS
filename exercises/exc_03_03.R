@@ -1,4 +1,4 @@
-library(dplyr)
+suppressMessages(library(dplyr))
 
 slice(iris,1:10)
 
