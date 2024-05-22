@@ -1,12 +1,9 @@
 library(maps)
 library(tidyverse)
-earthquakes = data.frame(
-  "long"=runif(30,0,360),
-  "lat"=runif(30,-90,90),
-  "magnitude"=runif(30,3,10)
-)
+earthquakes = read.csv("https://raw.githubusercontent.com/LinkedEarth/RLeapFROGS/binder/public/module2/recent_earthquakes.csv")
 
-world_map = map_data("world2")
+world_map = map_data("world") %>% 
+  filter(! long > 180)
 
 countries = world_map %>%
   distinct(region) %>%
@@ -17,7 +14,7 @@ countries %>%
   geom_map(map = world_map) +
   expand_limits(x = world_map$long, y = world_map$lat) +
   coord_map("moll") +
-  geom_point(data=earthquakes, mapping = aes(x=long, y=lat, color=magnitude, size=magnitude),inherit.aes = FALSE) +
+  geom_point(data=earthquakes, mapping = aes(x=longitude, y=latitude, color=mag, size=mag),inherit.aes = FALSE) +
   scale_colour_gradient(low = "#808080", high = "#FF0000") +
   theme(legend.position = "bottom") +
-  ggtitle("Stange Earthquake Pattern")
+  ggtitle("Earthquakes above magnitude 2.5, 23 April 2024 - 22 May, 2024")
