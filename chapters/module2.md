@@ -181,10 +181,20 @@ Let's do one more plot, a map.
 
 <exercise id="8" title="maps">
 
-making maps in ggplot will often include an extension package. Leaflet is very useful and can provide interactivity for web pages. Here we'll build a static map
+Making maps in ggplot will often include an extension package. Leaflet is very useful and can provide interactivity for web pages. Here we'll build a static map using the ```maps``` package to define the country borders.
+
+We'll plot recent earthquakes on our world map. The earthquakes data frame was downloaded from the USGS Earthquake Catalog, pulling all 2.5+ magnitude earthquakes between 4/21/2024 - 5/22/2024.
+
+First, we need to read in the world country borders and clean up the data a little.
+
+Next, we'll reorganize the data for ggplot.
+
+We build this plot starting from the data frame. We use a "mollweide" projection. We also use ```theme()``` to manually move the legend beneath the map.
 
 <codeblock id="04_04">
 </codeblock>
+
+This is a fairly simple map, but you get a sense of what's possible. You might imagine adding population densities by country to get a sense for hazards on this map.
 
 We'll see more plots from ggplot in the time series analysis tutorials. Meanwhile, find inspiration from an array of ggplot visulations [here](https://r-graph-gallery.com/).
 
