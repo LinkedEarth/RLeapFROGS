@@ -100,6 +100,8 @@ So, to read the code above:
 
 Well, I would call that pretty tidy. This dataset may not be too hard to digest in its original form, but you could imagine how helpful this could be for a 100,000 row dataset.
 
+Next, we'll move on to visualization.
+
 </exercise>
 
 <exercise id="6" title="packge: ggplot2">
@@ -132,7 +134,7 @@ Let's dive in deeper.
 
 </exercise>
 
-<exercise id="7" title="expanding a ggplot">
+<exercise id="7" title="time series in ggplot">
 
 As this course is focused on time series, most of our visulaization examples will include lines. We'll throw in a couple of other examples as well for summarizing other data types.
 
@@ -142,12 +144,37 @@ We'll create a 500-point time series with an even time step of 1 and first-order
 
 Additionally, let's make a second time series by adding some noice to the first.
 
-And before we do any plotting we'll reformat the data for ggplot. We can only assign one 'y aesthetic', so we need to use the function ```gather``` to reorganize our data.
+And before we do any plotting we'll reformat the data for ggplot. We can only assign one 'y aesthetic', so we need to use the function ```gather``` to reorganize our data. We put all the time series values into one column and we make a new column for the grouping of these values into their respective Series.
+
+Let's see what a default plot looks like.
 
 <codeblock id="04_02">
 </codeblock>
 
-
+Okay, not bad for just running with the defaults. We could use a title, maybe some formatting, and I like to add summary stats to plots. Let's customize!
 
 </exercise>
 
+<exercise id="8" title="advanced time series plot">
+
+Knowing a little bit about time series, we should expect that adding noice will reduce autocorrelation. In this case we should also anticipate an increased standard deviation because the amplitude of the added noise was relatively big relative to the standard deviation of the original time series. Let's calculate those values for our next plot.
+
+We'll have to put these values into text strings using ```paste0()```, then put them into a data frame for use by ```geom_label()```.
+
+\* Note here that ```data``` and ```mapping``` inputs are inherited by default from ```ggplot()``` by all ```geom```s, but unique arguments can be given to any particular ```geom```.
+
+Finally, let's add a descriptive title. I'll indulge in one more stat here.
+
+<codeblock id="04_03">
+</codeblock>
+
+We added 4 new lines (layers) to out ```ggplot```, and hopefully we've created a much more useful visualization of our time series. Let's go through the new layers:
+
+* ```theme_classic()``` There are many themes (all beginning with 'theme_' that will change the appearance of the plot, such as background shading, axis and gridline appearance, etc. All of these can be manipulated manually with the additional call to ```theme()```.
+* ```facet_wrap``` Faceting separates the data into sub-plots. In this case we break it up by series and organize the 2 plots vertically by specifying ```ncol=1```.
+* ```geom_label()``` No we are adding an additional ```geom```, which also allows us to bring in a new data frame and/or new aesthetics. In this case we use the ```ts_labs``` data and manually assign where it is placed.
+* ```ggtitle()``` Finally, we add our title which was previously assigned to a variable, ```final_title```
+
+We'll see more plots from ggplot in the time series analysis tutorials. Meanwhile, find inspiration from an array of ggplot visulations [here](https://r-graph-gallery.com/).
+
+</exercise>
