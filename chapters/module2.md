@@ -1,7 +1,7 @@
 ---
-title: 'Module 2: First R project'
+title: 'Module 2: R for science'
 description:
-  'This module will guide you through development of your first R project'
+  'This module will guide you through manipulation and vizualization of data in R'
 prev: /module1
 next: /module3
 type: chapter
