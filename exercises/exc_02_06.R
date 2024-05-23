@@ -8,3 +8,6 @@ firstLetter <- function(string,place=FALSE){
     }
   return(string)
 }
+
+#test run, should output 'z'
+firstLetter("zebra")

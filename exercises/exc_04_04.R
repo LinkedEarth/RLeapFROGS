@@ -1,4 +1,4 @@
-suppressMessages(libarary(mapproj))
+suppressMessages(library(mapproj))
 suppressMessages(library(maps))
 suppressMessages(library(tidyverse))
 

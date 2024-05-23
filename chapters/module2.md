@@ -95,8 +95,8 @@ The ```print``` method for ```tibble``` offers more information in a compact for
 
 So, to read the code above:
 1) Start with the iris tibble
-2) subset the 3 columns of interest
-3) nest the sepal lengths and widths by species, such that we are left with only one row per species
+2) Subset the 3 columns of interest
+3) Nest the sepal lengths and widths by species, such that we are left with only one row per species
 
 Well, I would call that pretty tidy. This dataset may not be too hard to digest in its original form, but you could imagine how helpful this could be for a 100,000 row dataset.
 
