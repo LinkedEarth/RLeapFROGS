@@ -5,7 +5,7 @@ suppressMessages(library(tidyverse))
 set.seed(599)
 
 #generate a time series using the default parameters
-ts1 <- armaGen(npts = 500, rhos=c(0.9), m = 0, std = 1, verbose = FALSE)
+ts1 <- armaGen(npts = 500, rhos=c(0.9), m = 0, std = 1, verbose = FALSE, genplot = FALSE)
 
 #add a second time series as ts1 plus noice
 df1 <- ts1 %>%
