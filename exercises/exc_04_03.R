@@ -14,8 +14,8 @@ series_cor <- cor(vec_A, vec_B)
 sd_A <- round(sd(vec_A), 2)
 sd_B <- round(sd(vec_B), 2)
 ##Note here that the 'acf()' function returns a list. We use the '$' operator to extract one part of that list and take the second value from the resulting vector of autocorrelations
-AR1_A <- round(acf(vec_A)$acf[2], 2)
-AR1_B <- round(acf(vec_B)$acf[2], 2)
+AR1_A <- round(acf(vec_A, plot = FALSE)$acf[2], 2)
+AR1_B <- round(acf(vec_B, plot = FALSE)$acf[2], 2)
 
 #organize stat labels
 stat_labels <- paste0(paste0("SD = ", c(sd_A, sd_B), ", "),
