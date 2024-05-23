@@ -90,6 +90,10 @@ Here's a first look at a simple function:
 <codeblock id="02_04">
 </codeblock>
 
+The output of ```substring("hello",1,3)``` and ```text1``` are the same, ```hel```. That's because these calls are doing the same thing.
+
+When we create the new function ```firstLetter()```, the sole argument is ```string```. In our example, the variable ```string``` is assigned the value of ```"alphabet"```. Within the function, the variable ```string``` is reassigned to be the first letter of itself, "a" in this case.
+
 Writing functions is simple, but requires a specific syntax.
 
 </exercise>
