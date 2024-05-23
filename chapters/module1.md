@@ -28,6 +28,8 @@ The R console can be used to evaluate any R code.
 
 This includes functioning as a simple calculator.
 
+\* NOTE: Running your first code block may take some time as the remote binder (where these R scripts are executed) will take some time initializing. Make sure you also try running some code on your local machine.
+
 <codeblock id="02_01">
 </codeblock>
 
