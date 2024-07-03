@@ -14,7 +14,7 @@ The following exercises will test your understanding of timeseries. Each module 
 
 This training introduces you to key concepts in timeseries analysis.
 
-The slides can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)) and the first R timeseries practicum [Introduction to Timeseries](https://linked.earth/R_pyrates_practicums/introduction-to-timeseries.html),
+The slides can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)) and the first R timeseries [tutorial](https://linked.earth/R_pyrates_practicums/introduction-to-timeseries.html),
  then answer the following questions:
 
 **Questions**
@@ -49,7 +49,7 @@ That is always available to you, but it is an extreme step. For one thing, there
 
 <exercise id="2" title="Data Processing">
 
-The slides for this section can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), then do the [practical exercises in R](https://linked.earth/R_pyrates_practicums/signal-processing-in-r.html).
+The slides for this section can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), then do the [tutorial](https://linked.earth/R_pyrates_practicums/signal-processing-in-r.html).
 
 
 **Questions**:
