@@ -8,9 +8,9 @@ type: chapter
 id: 3
 ---
 
-<exercise id="0" title="Intro">
+<exercise id="0" title="Introduction">
   
-The following exercises will test your understanding of timeseries. Each module has associated [practicums](https://linked.earth/R_pyrates_practicums/) which provide practical examples in R as well as additional resources. We strongly suggest that you complete the suggested readings and complete the tutorials on your local machine in RStudio.
+The following exercises will test your understanding of timeseries. Each module has associated practicums which provide practical examples in R as well as additional resources. We strongly suggest that you complete the suggested readings and complete the tutorials on your local machine in RStudio.
 
 </exercise>
 
