@@ -49,7 +49,7 @@ That is always available to you, but it is an extreme step. For one thing, there
 
 <exercise id="2" title="Data Processing">
 
-The slides for this section can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), then do the practical exercises in [R]([http://linked.earth/PyRATES_practicums_py/notebooks/signal_processing.html](https://linked.earth/R_pyrates_practicums/signal-processing-in-r.html)).
+The slides for this section can be accessed [here](https://figshare.com/ndownloader/files/46758307). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), then do the [practical exercises in R]([https://linked.earth/R_pyrates_practicums/signal-processing-in-r.html)).
 
 
 **Questions**:
@@ -83,7 +83,7 @@ That's a very interesting filter, but that's not what it does.
 
 <exercise id="3" title="Measures of Association">
 
-The slides can be accessed [here](https://figshare.com/ndownloader/files/46731670). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), and relevant [tutorial]([http://linked.earth/PyRATES_practicums_py/notebooks/Association.html](https://linked.earth/R_pyrates_practicums/association.html)), then answer the following questions:
+The slides can be accessed [here](https://figshare.com/ndownloader/files/46731670). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), and relevant [tutorial](https://linked.earth/R_pyrates_practicums/association.html), then answer the following questions:
 
 **Questions**
 
@@ -200,7 +200,7 @@ You really think we would do that to you?
 
 <exercise id="5" title="Spectral Analysis">
 
-The slides can be accessed [here](https://figshare.com/ndownloader/files/46768570). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), and relevant [tutorials]([http://linked.earth/PyRATES_practicums_py/notebooks/Spectral_Analysis_Rio_Grande.html](https://linked.earth/R_pyrates_practicums/spectral-analysis-in-r.html)), then answer the following questions:
+The slides can be accessed [here](https://figshare.com/ndownloader/files/46768570). Please read the presentation, as well as other helpful materials (e.g. [Part 2 of this book](https://figshare.com/articles/book/Data_Analysis_in_the_Earth_Environmental_Sciences/1014336)), and relevant [tutorials](https://linked.earth/R_pyrates_practicums/spectral-analysis-in-r.html), then answer the following questions:
 
 **Questions**
 How would you find out what spectral methods are available in `R` (several possible correct answers)?
@@ -260,7 +260,7 @@ I see you like impressive words! Unfortunately, they are used in the wrong way h
 
 <exercise id="6" title="Wavelet Analysis">
 
-The slides can be accessed [here](https://figshare.com/ndownloader/files/46768570). Please read the presentation, and relevant [tutorials]([http://linked.earth/PyRATES_practicums_py/notebooks/wavelets%26coherence.html](https://linked.earth/R_pyrates_practicums/wavelet-transform-in-r.html)), then answer the following questions:
+The slides can be accessed [here](https://figshare.com/ndownloader/files/46768570). Please read the presentation, and relevant [tutorials](https://linked.earth/R_pyrates_practicums/wavelet-transform-in-r.html), then answer the following questions:
 
 **Questions**
 
