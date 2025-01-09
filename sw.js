@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-7c5d8995431ee204261e.js"
+    "url": "webpack-runtime-26c6c1feeb6b30c8b8c7.js"
   },
   {
     "url": "styles.0e440291e8e72d4a2a51.css"
@@ -50,14 +50,14 @@ self.__precacheManifest = [
     "url": "e6d6ed13-bab39835ca1e382a1a59.js"
   },
   {
-    "url": "app-caeef98426760ad2395e.js"
+    "url": "app-67a16a125f03995872db.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-15096bed533ed0ff8b58.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "48001e58c62f008c785aa886c641ad00"
+    "revision": "4c313514eaf9646cbb3049733ee96fc3"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -65,14 +65,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "cc530e5f994288584c1662296b55fc84"
+    "revision": "ea6413804180f9f060505efca905753e"
   },
   {
     "url": "polyfill-404a8fe84b9b126210e7.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "309af307f7f2d33a07b45c899a3c031a"
+    "revision": "e835230ee6b5ac6512894f42b1cac8b9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -91,12 +91,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/LeapFROGS`), ``)
+  pathname = pathname.replace(new RegExp(`^/RLeapFROGS`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/LeapFROGS/app-caeef98426760ad2395e.js`))) {
+  if (!resources || !(await caches.match(`/RLeapFROGS/app-67a16a125f03995872db.js`))) {
     return await fetch(event.request)
   }
 
@@ -109,7 +109,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/LeapFROGS/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/RLeapFROGS/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
