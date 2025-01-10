@@ -5,8 +5,8 @@ type: slides
 <div><h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github" width=25% align="left"/> Git and GitHub</h1></div>
 
 ---
+# Git
 
-### Git
 Git is a distributed version control system that helps developers track and manage changes in their codebase. Here's a breakdown:
 
 * Version Control: Git keeps a history of changes made to files, allowing developers to revert to previous versions, collaborate with others, and handle multiple versions of a project.
@@ -16,7 +16,11 @@ Git is a distributed version control system that helps developers track and mana
   * Speed and efficiency: Operations like commits, diffs, and merges are fast.
   * Offline capability: Most tasks can be done without an internet connection.
 
-### GitHub
+
+---
+
+# GitHub
+
 GitHub is a web-based platform built on top of Git, providing additional features for collaboration and project management. It allows developers to host and manage Git repositories in the cloud. Here's how it stands out:
 
 * Code Hosting: GitHub stores your code in repositories and makes it accessible to collaborators or the public.
@@ -31,9 +35,12 @@ GitHub is a web-based platform built on top of Git, providing additional feature
 * Integration with CI/CD Tools: Automate testing, building, and deployment pipelines.
 * GitHub Pages: Host static websites directly from a repository.
 
-### Summary
-Git: A tool for version control and code management.
-GitHub: A platform that uses Git while adding collaboration, hosting, and project management features.
+---
+
+# Git vs. GitHub
+
+* Git: A tool for version control and code management.
+* GitHub: A platform that uses Git while adding collaboration, hosting, and project management features.
 
 They are often used together, but GitHub is just one of several services (like GitLab and Bitbucket) that can host Git repositories.
 
