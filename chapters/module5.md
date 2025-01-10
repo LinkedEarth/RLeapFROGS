@@ -32,7 +32,7 @@ In the last exercise, you will configure your GitHub account for secure logins v
 
 </exercise>
 
-<exercise id="2" title="Intermediate Github">
+<exercise id="3" title="Intermediate Github">
 
 Now that you set up your GitHub account, it is time to start collaborating.
 
@@ -46,7 +46,7 @@ Learn about branches, pull requests, and version control systems.
 
 </exercise>
 
-<exercise id="3" title="GitHub for project planning">
+<exercise id="4" title="GitHub for project planning">
 
 In addition to the issue tracking and collaboration tools mentioned above, GitHub can be really useful for planning and tracking work on a project. 
 
