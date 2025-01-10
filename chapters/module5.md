@@ -8,7 +8,13 @@ type: chapter
 id: 5
 ---
 
-<exercise id="1" title="Introduction to GitHub">
+<exercise id="1" title="git and GitHub" type="slides">
+
+<slides source="chapter5_01_git_and_github">
+
+</exercise>
+
+<exercise id="2" title="Introduction to GitHub">
 
 This section from Project Pythia's tutorials will introduce GitHub, the de facto standard platform for collaboration and version control used by the open-source Python community.
 
