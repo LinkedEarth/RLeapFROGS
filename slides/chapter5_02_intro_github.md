@@ -2,7 +2,7 @@
 type: slides
 ---
 
-<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 2<br>Intermediate GitHub</h1></div>
+<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 2<br>Introduction to GitHub</h1></div>
 
 ---
 
@@ -67,19 +67,11 @@ A few use cases:
   * A website
   * A code library (R, Python, etc.)
 
-### Forking and Pull Requests
+### Forking
 
-Forking a repo creates a copy that will track the original. This method is primarily used for pull requests. After forking a repo, you are free to fix bugs or add features, then offer your fork as an improved version back to the orginal repo owners. This offer is called a pull request.
+Forking a repo creates a copy that will track the original. This method is primarily used for making changes to the original repo by users without direct access. This is accomplished by a pull request, which is covered in the next module.
 
 [Clong and Forking from project Pythia](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html)
-
-[Pull Requests from project Pythia](https://foundations.projectpythia.org/foundations/github/github-pull-request.html)
----
-## Make your repository citable
-
-Zenodo is most known for data archival. When depositing data with Zenodo, a digital object identifier (DOI) is issued. Creating a persistent reference to the data exactly as they exist at the time of upload and offering an object for citation in scientific publications. Zendo also offers this service for GitHub repositories.
-
-[zenode versioning](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 
 ---
 
