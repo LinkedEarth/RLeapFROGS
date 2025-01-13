@@ -22,15 +22,7 @@ id: 5
 
 <exercise id="3" title="Intermediate Github">
 
-Now that you set up your GitHub account, it is time to start collaborating.
-
-Learn about branches, pull requests, and version control systems.
-
-[Git Branches](https://foundations.projectpythia.org/foundations/github/git-branches.html)
-
-[Creating a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html)
-
-[Version Control with Git](https://foundations.projectpythia.org/foundations/github/basic-git.html)
+<slides source="chapter5_03_intermediate_github">
 
 </exercise>
 
