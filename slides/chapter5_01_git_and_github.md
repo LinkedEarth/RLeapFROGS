@@ -44,6 +44,3 @@ GitHub is a web-based platform built on top of Git, providing additional feature
 
 They are often used together, but GitHub is just one of several services (like GitLab and Bitbucket) that can host Git repositories.
 
----
-
-# Let's Get Started!
