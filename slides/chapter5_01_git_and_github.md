@@ -2,7 +2,7 @@
 type: slides
 ---
 
-<div><h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github" width=25% align="left"/> Git and GitHub</h1></div>
+<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 1<br>Git and GitHub</h1></div>
 
 ---
 # Git
