@@ -21,8 +21,10 @@ Git is a distributed version control system that helps developers track and mana
 
 # GitHub
 
-GitHub is a web-based platform built on top of Git, providing additional features for collaboration and project management. It allows developers to host and manage Git repositories in the cloud. Here's how it stands out:
+GitHub is a web-based platform built on top of Git, providing additional features for collaboration and project management. It allows developers to host and manage Git repositories in the cloud. 
 
+* Integration with CI/CD Tools: Automate testing, building, and deployment pipelines.
+* GitHub Pages: Host static websites directly from a repository.
 * Code Hosting: GitHub stores your code in repositories and makes it accessible to collaborators or the public.
 * Collaboration Tools:
   * Pull requests: Suggest and review code changes.
@@ -32,8 +34,6 @@ GitHub is a web-based platform built on top of Git, providing additional feature
   * Forking: Clone repositories to create your version.
   * Stars: Bookmark repositories you find useful.
   * Discussions: Communicate and share knowledge within the community.
-* Integration with CI/CD Tools: Automate testing, building, and deployment pipelines.
-* GitHub Pages: Host static websites directly from a repository.
 
 ### Additonal resources from project Pythia:
 [What is GitHub?](https://foundations.projectpythia.org/foundations/github/what-is-github.html)
