@@ -23,11 +23,11 @@ Zenodo is most known for data archival. When depositing data with Zenodo, a digi
 
 * Open the Zenodo [link](https://zenodo.org/login) and login <strong>with GitHub</strong>. You will need to <em>Authorize Zenodo</em> to access GitHub.
 
-<img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zenodo_login.png" alt="Zenodo login" width=25% align="left">
+<div><img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zenodo_login.png" alt="GitHub Logo" width=25% align="left"/></div>
 
 * Navigate to Zenodo's [page](https://zenodo.org/account/settings/github/) for managing GitHub and enable archival on the repository.
 
-<img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zendo_github_page.png" alt="Zenodo login" width=25% align="left">
+<div><img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zendo_github_page.png" alt="GitHub Logo" width=25% align="left"/></div>
 
 [GitHub tutorial for linking to Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 
