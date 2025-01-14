@@ -38,7 +38,7 @@ Some possible uses:
 
 ### Issues
 
-A GitHub Issue is a note in a repository that describes a bug, suggested feature, general feedback. Issues can be submitted by repository owners/collaborators to track tasks or by outside users with questions/suggestions. 
+A GitHub Issue is a note in a repository that describes a bug, suggests a new feature, or offers general feedback. Issues can be submitted by repository owners/collaborators to track tasks or by outside users with questions/suggestions. 
 
 #### Writing a good issue
 
