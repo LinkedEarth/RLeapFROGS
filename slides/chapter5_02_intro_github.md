@@ -42,7 +42,7 @@ A GitHub Issue is a note is a repository that describes a bug, suggested feature
 
 A bug report should consist of a reproducible example. Some repositories include [issue templates](https://github.com/stevemao/github-issue-templates?tab=readme-ov-file), which generally include space for <em>Expected Behavior</em>, <em>Actual Behavior</em>, <em>Steps to Reproduce the Problem</em>, and <em>Specifications (Version, Platform, Subsystem)</em>. Here's an example of a [well written issue](https://github.com/LinkedEarth/Pyleoclim_util/issues/469). Writing issues in this way makes reproducing problems (or misperceptions of problems) straightforward. This allows for smooth communication with the repository maintainers and greatly improves your chances of resolving your problems.
 
-[More help from project Pythia](https://foundations.projectpythia.org/foundations/github/github-issues.html). Remember, when opening issues, always submit a minimum reproducible example. It doesn't have to use your own data, just something similar that you can simulate using a random generator or write manually. [Here](https://github.com/LinkedEarth/Pyleoclim_util/issues/469) is a great example of an issue with a minimum reproducible example. 
+[More help from project Pythia](https://foundations.projectpythia.org/foundations/github/github-issues.html).
 
 ### Discussions
 
