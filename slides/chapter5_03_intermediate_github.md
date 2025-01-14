@@ -2,7 +2,7 @@
 type: slides
 ---
 
-<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 2<br>Intermediate GitHub</h1></div>
+<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 3<br>Intermediate GitHub</h1></div>
 
 ---
 
