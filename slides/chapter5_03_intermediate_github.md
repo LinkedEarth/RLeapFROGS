@@ -21,7 +21,15 @@ After you have forked a repo, you are free to fix bugs or add features. After im
 
 Zenodo is most known for data archival. When depositing data with Zenodo, a digital object identifier (DOI) is issued. Creating a persistent reference to the data exactly as they exist at the time of upload and offering an object for citation in scientific publications. Zendo also offers this service for GitHub repositories.
 
-[Linking to Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+* Open the Zenodo [link](https://zenodo.org/login) and login <strong>with GitHub</strong>. You will need to <em>Authorize Zenodo</em> to access GitHub.
+
+<img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zenodo_login.png" alt="Zenodo login" width=25% align="left">
+
+* Navigate to Zenodo's [page](https://zenodo.org/account/settings/github/) for managing GitHub and enable archival on the repository.
+
+<img src="https://github.com/LinkedEarth/RLeapFROGS/blob/8c4fffcc713bcc8fbf4aa378e7c92f34975f64b4/static/module5/zendo_github_page.png" alt="Zenodo login" width=25% align="left">
+
+[GitHub tutorial for linking to Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 
 ---
 
