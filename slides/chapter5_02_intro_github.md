@@ -56,6 +56,8 @@ GitHub Discussions provide a more open-ended forum for community engagement. A d
 
 Making a copy of a public repository can be useful in many circumstances. There are two ways to do this.
 
+---
+
 ### Cloning
 
 Cloning a repository creates your own copy <strong>independent</strong> of the original repo. This method is ideal creating your own project, using an existing repo as the starting point.
@@ -67,6 +69,8 @@ A few use cases:
   * A website
   * A code library (R, Python, etc.)
 
+---
+
 ### Forking
 
 Forking a repo creates a copy that will track the original. This method is primarily used for making changes to the original repo by users without direct access. This is accomplished by a pull request, which is covered in the next module.
@@ -77,7 +81,8 @@ Forking a repo creates a copy that will track the original. This method is prima
 
 ## Setting up a GitHub account
 
+The linked tutorial will guide you through some of the more advanced components of a GitHub account.
 
-[More help from project Pythia](https://foundations.projectpythia.org/foundations/github/github-setup-advanced.html)
+[Account setup tutorial from Project Pythia](https://foundations.projectpythia.org/foundations/github/github-setup-advanced.html)
 
 
