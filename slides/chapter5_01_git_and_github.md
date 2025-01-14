@@ -41,7 +41,7 @@ GitHub is a web-based platform built on top of Git, providing additional feature
 
 ---
 
-# Git vs. GitHub
+## Git vs. GitHub
 
 * Git: A tool for version control and code management.
 * GitHub: A platform that uses Git while adding collaboration, hosting, and project management features.
