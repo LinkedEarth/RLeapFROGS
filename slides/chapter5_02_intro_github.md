@@ -65,6 +65,10 @@ Making a copy of a public repository can be useful in many circumstances. There 
 
 Cloning a repository creates your own copy, <strong>independent</strong> of the original repo. This method is ideal for creating your own project, using an existing repo as the starting point.
 
+
+
+
+
 A few use cases:
 
 * Reproducing a scientific workflow
