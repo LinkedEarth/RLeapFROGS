@@ -14,7 +14,7 @@ id: 5
 
 </exercise>
 
-<exercise id="2" title="Intermediate Github">
+<exercise id="2" title="Introduction to Github">
 
 <slides source="chapter5_02_intro_github">
 
