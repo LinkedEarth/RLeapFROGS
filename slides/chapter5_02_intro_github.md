@@ -20,29 +20,29 @@ In the last exercise, you will configure your GitHub account for secure logins v
 
 A repository (repo) is a web-hosted file directory. A repo can be public or private and can have multiple collaborators. Repos are typically used to house coding projects, but they can also be used to store other types of files.
 
+
 Some possible uses:
 
+* Share a scientific workflow
+* Publish a website
 * Collaborate on a coding project
   * Track changes
   * Assign tasks
   * Maintain production and development versions simulateously and merge when appropriate
-* Share a scientific workflow
-* Publish a website
 
 
 ---
-
 ## Issues and Discussions
 
 ### Issues
 
-A GitHub Issue is a note is a repository that describes a bug, suggested feature, general feedback. Issues can be submitted by repository owners/collaborators to track tasks or by outside users with questions/suggestions. 
+A GitHub Issue is a note in a repository that describes a bug, suggested feature, general feedback. Issues can be submitted by repository owners/collaborators to track tasks or by outside users with questions/suggestions. 
 
-<strong>Writing a good issue</strong>:
+#### Writing a good issue
 
 A bug report should consist of a reproducible example. Some repositories include [issue templates](https://github.com/stevemao/github-issue-templates?tab=readme-ov-file), which generally include space for <em>Expected Behavior</em>, <em>Actual Behavior</em>, <em>Steps to Reproduce the Problem</em>, and <em>Specifications (Version, Platform, Subsystem)</em>. Here's an example of a [well written issue](https://github.com/LinkedEarth/Pyleoclim_util/issues/469). Writing issues in this way makes reproducing problems (or misperceptions of problems) straightforward. This allows for smooth communication with the repository maintainers and greatly improves your chances of resolving your problems.
 
-[More help from project Pythia](https://foundations.projectpythia.org/foundations/github/github-issues.html).
+[More on Issues from project Pythia](https://foundations.projectpythia.org/foundations/github/github-issues.html).
 
 ### Discussions
 
@@ -51,7 +51,6 @@ GitHub Discussions provide a more open-ended forum for community engagement. A d
 [More](https://resources.github.com/devops/process/planning/discussions/)
 
 ---
-
 ## Cloning and Forking
 
 Making a copy of a public repository can be useful in many circumstances. There are two ways to do this.
