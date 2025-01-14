@@ -35,10 +35,8 @@ GitHub is a web-based platform built on top of Git, providing additional feature
 * Integration with CI/CD Tools: Automate testing, building, and deployment pipelines.
 * GitHub Pages: Host static websites directly from a repository.
 
-Additonal resources from project Pythia:
-
+### Additonal resources from project Pythia:
 [What is GitHub?](https://foundations.projectpythia.org/foundations/github/what-is-github.html)
-
 [What is a GitHub Repository?](https://foundations.projectpythia.org/foundations/github/github-repos.html)
 
 ---
