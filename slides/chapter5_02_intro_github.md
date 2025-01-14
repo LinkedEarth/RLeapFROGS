@@ -89,6 +89,10 @@ Forking a repo creates a copy that will track the original. This method is prima
 
 ## Setting up a GitHub account
 
+<div><h1><img src="https://github.com/LinkedEarth/RLeapFROGS/blob/main/static/module5/github_signup.png?raw=true" alt="GitHub Logo" width=25% align="left"/></h1></div>
+
+Signing up for a new GitHub account is simple and free. After signing up you can create a new repository and try some of the features outlined in this lesson.
+
 The linked tutorial will guide you through some of the more advanced components of a GitHub account.
 
 [Account setup tutorial from Project Pythia](https://foundations.projectpythia.org/foundations/github/github-setup-advanced.html)
