@@ -51,7 +51,7 @@ GitHub Discussions provide a more open-ended forum for community engagement. A d
 ---
 ## Cloning and Forking
 
-Making a copy of a public repository can be useful in many circumstances. There are two ways to do this.
+Making a copy of a public repository can be useful in many circumstances. There are two ways to do this: <em>Clonin</em>g and <em>Forking</em>.
 
 ---
 
