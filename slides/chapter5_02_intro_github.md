@@ -20,7 +20,6 @@ In the last exercise, you will configure your GitHub account for secure logins v
 
 A repository (repo) is a web-hosted file directory. A repo can be public or private and can have multiple collaborators. Repos are typically used to house coding projects, but they can also be used to store other types of files.
 
-
 Some possible uses:
 
 * Share a scientific workflow
@@ -29,7 +28,6 @@ Some possible uses:
   * Track changes
   * Assign tasks
   * Maintain production and development versions simulateously and merge when appropriate
-
 
 ---
 ## Issues and Discussions
