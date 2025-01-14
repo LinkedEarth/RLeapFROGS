@@ -79,7 +79,7 @@ A few use cases:
 ---
 
 ### Forking
-<div><h1><img src="https://user-images.githubusercontent.com/17777237/54873012-40fa5b00-4dd6-11e9-98e0-cc436426c720.png" alt="GitHub Logo" width=25% align="left"/></h1></div>
+<div><h1><img src="https://user-images.githubusercontent.com/17777237/54873012-40fa5b00-4dd6-11e9-98e0-cc436426c720.png" alt="GitHub Logo" width=15% align="left"/></h1></div>
 
 Forking a repo creates a copy that will track the original. This method is primarily used for making changes to the original repo by users without direct access. This is accomplished by a pull request, which is covered in the next module.
 
