@@ -8,7 +8,7 @@ type: chapter
 id: 5
 ---
 
-<exercise id="1" title="git and GitHub" type="slides">
+<exercise id="1" title="Git and GitHub" type="slides">
 
 <slides source="chapter5_01_git_and_github">
 
