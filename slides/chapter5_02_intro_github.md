@@ -48,7 +48,7 @@ A bug report should consist of a reproducible example. Some repositories include
 
 ### Discussions
 
-GitHub Discussions provide a more open-ended forum for community engagement. A discussion topic is an open space for conversations such as steering project directions, eliciting community feedback or offering notes on a new release.
+GitHub Discussions provide a more open-ended forum for community engagement. A discussion topic is an open space for conversations such as steering project directions, eliciting community feedback, or offering notes on a new release.
 
 [More on Discussions from GitHub](https://resources.github.com/devops/process/planning/discussions/)
 
