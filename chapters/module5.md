@@ -14,13 +14,13 @@ id: 5
 
 </exercise>
 
-<exercise id="2" title="Introduction to Github">
+<exercise id="2" title="Introduction to Github" type="slides">
 
 <slides source="chapter5_02_intro_github">
 
 </exercise>
 
-<exercise id="3" title="Intermediate Github">
+<exercise id="3" title="Intermediate Github" type="slides">
 
 <slides source="chapter5_03_intermediate_github">
 
