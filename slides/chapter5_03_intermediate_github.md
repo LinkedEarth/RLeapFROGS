@@ -2,7 +2,9 @@
 type: slides
 ---
 
-<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 2<br>Introduction to GitHub</h1></div>
+<div><h1><img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub Logo" width=25% align="left"/> Lesson 2<br>Intermediate GitHub</h1></div>
+
+---
 
 Now that you set up your GitHub account, it is time to start collaborating.
 
