@@ -35,9 +35,9 @@ GitHub is a web-based platform built on top of Git, providing additional feature
   * Stars: Bookmark repositories you find useful.
   * Discussions: Communicate and share knowledge within the community.
 
-### Additonal resources from project Pythia:
-[What is GitHub?](https://foundations.projectpythia.org/foundations/github/what-is-github.html)
-[What is a GitHub Repository?](https://foundations.projectpythia.org/foundations/github/github-repos.html)
+[Pythia - What is GitHub?](https://foundations.projectpythia.org/foundations/github/what-is-github.html)      
+
+[Pythia - What is a GitHub Repository?](https://foundations.projectpythia.org/foundations/github/github-repos.html)
 
 ---
 
