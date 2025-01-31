@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/801746498.svg)](https://doi.org/10.5281/zenodo.14783524)
+
 # RLeapFROGS
 
 
