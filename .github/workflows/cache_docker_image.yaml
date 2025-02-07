@@ -1,4 +1,4 @@
-name: Test
+name: Cache Docker Image for Binder
 on: workflow_dispatch
 
 jobs:
