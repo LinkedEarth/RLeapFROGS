@@ -41,6 +41,8 @@ See an example [here](https://github.com/binder-examples/r-conda)
 
 Add Binder stuff from Deborah's LeapFROGS
 
+---
+
 ## Linking the Repository to myBinder
 
 1. Go to [myBinder.org](https://mybinder.org).
