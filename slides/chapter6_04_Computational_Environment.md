@@ -2,7 +2,7 @@
 type: slides
 ---
 
-<div><h1><img src="https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png" alt="Docker Logo" width=25% align="left"/> Lesson 5<br>Creating Containers</h1></div>
+<div><h1><img src="https://rstudio.github.io/renv/logo.svg" alt="renv Logo" width=25% align="left"/>Computational Environment</h1></div>
 
 ---
 
