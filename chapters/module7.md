@@ -205,6 +205,8 @@ See [r-pkgs.org/publishing.html](https://r-pkgs.org/publishing.html) for how to 
 devtools::check()
 ```
 
+The issues reported by `check()` are categorized into Errors, Warnings, and Notes. You will need to eliminate all Errors and Warnings before submitting your package to CRAN.
+
 # 2. Automating releases
 
 Use GitHub Actions to automate versioning, documentation, and test runs. Consider `usethis::use_release_issue()` to guide your release process.
@@ -350,14 +352,14 @@ Question: What is `pkgdown` used for?
 <opt text="Documenting test cases.">
 Use testthat for testing, not pkgdown.
 </opt>
-<opt text="Building static documentation websites for packages.", correct=True>
-It creates nice websites from your documentation.
-</opt>
 <opt text="Creating vignettes.">
 Vignettes are created with R Markdown or devtools.
 </opt>
 <opt text="Managing dependencies.">
 Use DESCRIPTION and usethis for that.
+</opt>
+<opt text="Building static documentation websites for packages.", correct=True>
+It creates nice websites from your documentation.
 </opt>
 </choice>
 
@@ -384,11 +386,11 @@ Question: Why use GitHub Actions in your R package development?
 <opt text="To edit documentation.">
 Docs are edited locally; Actions automate builds.
 </opt>
-<opt text="To automate tests, builds, and deployment.", correct=True>
-GitHub Actions automate key parts of package development.
-</opt>
 <opt text="To replace CRAN.">
 CRAN is still the main registry; Actions work alongside it.
+</opt>
+<opt text="To automate tests, builds, and deployment.", correct=True>
+GitHub Actions automate key parts of package development.
 </opt>
 <opt text="To generate plots.">
 Not a direct purpose of CI tools.
@@ -400,7 +402,7 @@ Not a direct purpose of CI tools.
 <exercise id="8" title="Hands-on exercise">
 
 * Use `usethis::create_package("myPkg")` to start a new package.
-* Add a function in the `R/` folder.
+* Add a function in the `R/` folder with at least one dependency.
 * Document it with `roxygen2` comments and run `devtools::document()`.
 * Write a test using `testthat`.
 * Push to GitHub and try creating a `pkgdown` site.
