@@ -42,7 +42,7 @@ As a rule of thumb: workflows for a single paper do not need to be packaged, but
 
 # 1. Software repositories
 
-Your code should live in a version-controlled repository like GitHub or GitLab. These platforms support collaboration, bug tracking, and continuous integration. You can learn more in [Module 5](https://linked.earth/LeapFROGS/module5).
+Your code should live in a version-controlled repository like GitHub or GitLab. These platforms support collaboration, bug tracking, and continuous integration. You can learn more in [Module 5](https://linked.earth/RLeapFROGS/module5).
 
 # 2. Software registries
 
@@ -60,9 +60,79 @@ Other platforms include:
 
 ## User APIs
 
-Think about what tasks users will want to perform with your package. Your public-facing functions should support these tasks clearly and concisely. Hide internal logic unless necessary.
+When building an R package, the user API consists of the functions and objects you export for users to interact with. A clean and intuitive API helps users accomplish their goals without needing to understand the underlying implementation.
 
-Use `usethis::use_package("dplyr")` or similar to manage dependencies and define your interface with care. Follow conventions—e.g., verbs for function names (`plot_data()`, `clean_names()`).
+### 1. Identify Core User Tasks
+
+Start by listing the 3–5 key tasks your users will want to accomplish with your package. Design functions around those tasks.
+
+Example: For a climate data package, core tasks might include:
+
+```r
+load_data()      # Load climate datasets
+analyze_trends() # Run basic trend analysis
+plot_results()   # Visualize the output
+```
+
+### 2. Name Functions Clearly
+
+Use action verbs for functions: `clean_data()`, `fit_model()`, `summarize_results()`. Stick to consistent and descriptive naming conventions. Avoid short or cryptic names unless they're well known (e.g., `lm()`).
+
+### 3. Group Related Functions
+
+If your package includes many functions, use naming prefixes to indicate related functions.
+
+Example:
+```r
+climate_load()
+climate_analyze()
+climate_plot()
+```
+
+Or organize functionality into submodules (files in the `R/` folder), like `load.R`, `analysis.R`, and `plot.R`.
+
+### 4. Use S3 or S4 Classes for Complex Objects
+
+If your package returns structured data (e.g., models or results), consider defining custom S3 or S4 classes. This enables method dispatch and makes your API feel consistent.
+
+Example: `summary.myModel()` and `plot.myModel()` provide familiar behaviors for new object types.
+
+### 5. Avoid Over-Engineering
+
+Only introduce complexity (like reference classes or R6) when necessary. Simple functions that return lists or data frames are often enough.
+
+### 6. Document Clearly
+
+Use roxygen2 to provide thorough documentation for each function:
+
+```r
+#' Load a climate dataset
+#'
+#' This function loads a dataset from the specified path.
+#' @param path Character string. Path to the data file.
+#' @return A tibble with the loaded dataset.
+#' @export
+load_data <- function(path) {
+  ...
+}
+```
+
+### 7. Prototype the API First
+
+Sketch how the API will be used in a script or notebook. This helps surface clunky naming or unclear argument patterns early on.
+
+```r
+library(myclimate)
+data <- load_data("climate.csv")
+results <- analyze_trends(data)
+plot_results(results)
+```
+
+Ask a peer: "Would you enjoy using this interface?"
+
+### 8. Keep Internals Private
+
+Only export functions that users should access. Use `@export` selectively. Internal helpers should remain unexported and clearly documented for maintainers only.
 
 ## Package structure
 
@@ -107,8 +177,8 @@ Example tools:
 - [`Binder`](https://mybinder.org) — run notebooks interactively online
 
 Examples:
-- [Pyleoclim tutorials](http://linked.earth/PyleoTutorials/intro.html)
-- [LinkedEarth Quarto books](http://linked.earth/PaleoBooks/index.html)
+- [dplyr tutorials](https://dplyr.tidyverse.org/articles/index.html)
+- [geoChronR tutorials](https://nickmckay.github.io/GeoChronR/articles/Introduction.html)
 
 # 4. Testing and CI
 
@@ -203,6 +273,125 @@ Base R doesn’t provide these development helpers.
 </opt>
 <opt text="tidyverse">
 `tidyverse` is a meta-package, not for development setup.
+</opt>
+</choice>
+
+Question: What file is required to define an R package?
+
+<choice id="07-04">
+<opt text="README.md">
+Helpful, but not required.
+</opt>
+<opt text="DESCRIPTION", correct=True>
+This file is required to define the package and its metadata.
+</opt>
+<opt text="index.html">
+Not used for package definition.
+</opt>
+<opt text="install.R">
+Not a standard R package file.
+</opt>
+</choice>
+
+Question: What tool should you use to document your functions inline in R?
+
+<choice id="07-05">
+<opt text="roxygen2", correct=True>
+This is the standard tool for inline documentation.
+</opt>
+<opt text="testthat">
+Used for testing, not documentation.
+</opt>
+<opt text="pkgdown">
+Used for building websites from documentation.
+</opt>
+<opt text="readr">
+Used for data input, not documentation.
+</opt>
+</choice>
+
+Question: What is the purpose of `NAMESPACE` in an R package?
+
+<choice id="07-06">
+<opt text="To list the authors.">
+That belongs in the DESCRIPTION file.
+</opt>
+<opt text="To declare package exports and imports.", correct=True>
+It controls what functions are available to users and what is imported.
+</opt>
+<opt text="To run unit tests.">
+Testing is handled by testthat.
+</opt>
+<opt text="To build documentation.">
+Documentation is generated separately via roxygen2.
+</opt>
+</choice>
+
+Question: How do you add a test to an R package?
+
+<choice id="07-07">
+<opt text="Put code in a notebook.">
+Tests belong in the tests/testthat directory.
+</opt>
+<opt text="Use usethis::use_testthat() and testthat::test_that()", correct=True>
+This sets up the structure and defines the test.
+</opt>
+<opt text="Write a Quarto document.">
+Quarto is for documentation and tutorials, not testing.
+</opt>
+<opt text="Include it in the DESCRIPTION file.">
+Not the right location for test code.
+</opt>
+</choice>
+
+Question: What is `pkgdown` used for?
+
+<choice id="07-08">
+<opt text="Documenting test cases.">
+Use testthat for testing, not pkgdown.
+</opt>
+<opt text="Building static documentation websites for packages.", correct=True>
+It creates nice websites from your documentation.
+</opt>
+<opt text="Creating vignettes.">
+Vignettes are created with R Markdown or devtools.
+</opt>
+<opt text="Managing dependencies.">
+Use DESCRIPTION and usethis for that.
+</opt>
+</choice>
+
+Question: What is a vignette in an R package?
+
+<choice id="07-09">
+<opt text="A short summary of package contents.">
+That's more like a README.
+</opt>
+<opt text="An R Markdown document showing example usage and workflows.", correct=True>
+Vignettes are long-form user guides included with the package.
+</opt>
+<opt text="A metadata file.">
+Metadata is in DESCRIPTION.
+</opt>
+<opt text="A static website.">
+That's built with pkgdown, not a vignette itself.
+</opt>
+</choice>
+
+Question: Why use GitHub Actions in your R package development?
+
+<choice id="07-10">
+<opt text="To edit documentation.">
+Docs are edited locally; Actions automate builds.
+</opt>
+<opt text="To automate tests, builds, and deployment.", correct=True>
+GitHub Actions automate key parts of package development.
+</opt>
+<opt text="To replace CRAN.">
+CRAN is still the main registry; Actions work alongside it.
+</opt>
+<opt text="To generate plots.">
+Not a direct purpose of CI tools.
 </opt>
 </choice>
 
