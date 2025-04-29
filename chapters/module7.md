@@ -401,10 +401,261 @@ Not a direct purpose of CI tools.
 
 <exercise id="8" title="Hands-on exercise">
 
-* Use `usethis::create_package("myPkg")` to start a new package.
-* Add a function in the `R/` folder with at least one dependency.
-* Document it with `roxygen2` comments and run `devtools::document()`.
-* Write a test using `testthat`.
-* Push to GitHub and try creating a `pkgdown` site.
+# Hands-on exercise: Build Your First R Package
+
+## Introduction
+
+In this exercise, you'll create a simple R package from scratch. We'll walk through each step of the basic package development workflow, from creating the structure to documenting your code and sharing it on GitHub.
+
+## Prerequisites
+
+Make sure you have the following packages installed:
+
+```r
+install.packages(c("usethis", "devtools", "roxygen2", "testthat", "pkgdown"))
+```
+
+Also, ensure you have Git installed on your system and a GitHub account set up.
+
+## Step 1: Create a new package
+
+1. Set your working directory to where you want to create your package
+2. Create a new package skeleton:
+
+```r
+usethis::create_package("colorStats")
+```
+
+3. This will create a directory with the basic structure of an R package and open it in a new RStudio session
+
+## Step 2: Add a function with dependencies
+
+1. Create a new R file in the `R/` folder named `color_summary.R`
+2. Add the following function that provides summary statistics with colored output (using the `crayon` package):
+
+```r
+#' Colored Summary Statistics
+#' 
+#' @description
+#' Provides basic summary statistics for a numeric vector with colored output
+#' for better visualization in the console.
+#' 
+#' @param x A numeric vector.
+#' @param digits Number of decimal places to round to.
+#' 
+#' @return A named list with summary statistics.
+#' 
+#' @examples
+#' color_summary(rnorm(100))
+#' color_summary(runif(50), digits=4)
+#' 
+#' @importFrom stats median sd quantile
+#' @importFrom crayon green blue yellow red
+#' @export
+color_summary <- function(x, digits = 2) {
+  if (!is.numeric(x)) {
+    stop("Input must be a numeric vector")
+  }
+  
+  # Calculate statistics
+  stats <- list(
+    mean = mean(x, na.rm = TRUE),
+    median = median(x, na.rm = TRUE),
+    sd = sd(x, na.rm = TRUE),
+    min = min(x, na.rm = TRUE),
+    max = max(x, na.rm = TRUE),
+    q25 = quantile(x, 0.25, na.rm = TRUE),
+    q75 = quantile(x, 0.75, na.rm = TRUE)
+  )
+  
+  # Round values
+  stats <- lapply(stats, round, digits = digits)
+  
+  # Print with colors
+  cat(green("Summary Statistics:"), "\n")
+  cat(blue("Mean:   "), stats$mean, "\n")
+  cat(blue("Median: "), stats$median, "\n")
+  cat(yellow("SD:     "), stats$sd, "\n")
+  cat(red("Min:    "), stats$min, "\n")
+  cat(red("Max:    "), stats$max, "\n")
+  cat(yellow("Q25:    "), stats$q25, "\n")
+  cat(yellow("Q75:    "), stats$q75, "\n")
+  
+  invisible(stats)
+}
+```
+
+## Step 3: Add package dependencies
+
+1. Use `usethis` to add the required dependency:
+
+```r
+usethis::use_package("crayon")
+```
+
+2. Set up Roxygen for documentation:
+
+```r
+usethis::use_roxygen_md()
+```
+
+## Step 4: Document your package
+
+1. Run the document command to create documentation from roxygen comments:
+
+```r
+devtools::document()
+```
+
+2. Check that the following files were created:
+   - `NAMESPACE` (should now include exports and imports)
+   - `man/color_summary.Rd` (documentation for your function)
+
+## Step 5: Add a simple test
+
+1. Set up the testthat framework:
+
+```r
+usethis::use_testthat()
+```
+
+2. Create a test file for your function:
+
+```r
+usethis::use_test("color_summary")
+```
+
+3. In the new test file `tests/testthat/test-color_summary.R`, add these tests:
+
+```r
+test_that("color_summary works with numeric input", {
+  set.seed(123)
+  x <- rnorm(100)
+  result <- color_summary(x, digits = 3)
+  
+  expect_type(result, "list")
+  expect_equal(length(result), 7)
+  expect_equal(round(mean(x), 3), result$mean)
+  expect_equal(round(median(x), 3), result$median)
+})
+
+test_that("color_summary handles errors", {
+  expect_error(color_summary("not numeric"))
+  expect_error(color_summary(list(1, 2, 3)))
+})
+```
+
+4. Run the tests:
+
+```r
+devtools::test()
+```
+
+## Step 6: Create a package README
+
+1. Set up a basic README.md file:
+
+```r
+usethis::use_readme_md()
+```
+
+2. Edit the README.md file to include:
+   - A brief description of your package
+   - Installation instructions
+   - A basic example
+
+Example content:
+
+```markdown
+# colorStats
+
+A simple R package that provides colored summary statistics in the console.
+
+## Installation
+
+You can install the development version from GitHub with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("your-username/colorStats")
+```
+
+## Example
+
+```r
+library(colorStats)
+color_summary(rnorm(100))
+```
+```
+
+## Step 7: Set up a GitHub repository
+
+1. Initialize git and make your first commit:
+
+```r
+usethis::use_git()
+```
+
+2. Create a GitHub repository and push your package:
+
+```r
+usethis::use_github()
+```
+
+## Step 8: Build a pkgdown site
+
+1. Configure pkgdown for your package:
+
+```r
+usethis::use_pkgdown()
+```
+
+2. Build the site:
+
+```r
+pkgdown::build_site()
+```
+
+3. Push to GitHub:
+
+```r
+system("git add .")
+system("git commit -m 'Add pkgdown site'")
+system("git push")
+```
+
+4. Enable GitHub Pages in your repository settings to make your pkgdown site visible online.
+
+## Step 9: Install and test your package
+
+1. Install your package from GitHub:
+
+```r
+devtools::install_github("your-username/colorStats")
+```
+
+2. Test your new function:
+
+```r
+library(colorStats)
+color_summary(mtcars$mpg)
+```
+
+## Bonus (if time permits)
+
+Try adding:
+- A second function that builds on the first
+- A vignette that demonstrates your package
+- Continuous integration using GitHub Actions
+
+## Conclusion
+
+Congratulations! You've created a basic R package with:
+- A documented function with dependencies
+- Unit tests
+- A GitHub repository
+- A pkgdown documentation site
+
+These are the foundations of good package development practices. As you build more complex packages, you'll use these same steps, just with more functions and features.
 
 </exercise>
