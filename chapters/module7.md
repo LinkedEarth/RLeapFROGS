@@ -42,7 +42,7 @@ As a rule of thumb: workflows for a single paper do not need to be packaged, but
 
 # 1. Software repositories
 
-Your code should live in a version-controlled repository like GitHub or GitLab. These platforms support collaboration, bug tracking, and continuous integration. You can learn more in [Module 5](https://linked.earth/RLeapFROGS/module5).
+Your code should live in a version-controlled repository like GitHub or GitLab. These platforms support collaboration, bug tracking, and continuous integration. You will need a to install git on your machine and have an account with GitHub to complete the hand-on portion of this course. You can learn more in [Module 5](https://linked.earth/RLeapFROGS/module5).
 
 # 2. Software registries
 
@@ -528,19 +528,37 @@ usethis::use_test("color_summary")
 3. In the new test file `tests/testthat/test-color_summary.R`, add these tests:
 
 ```r
+# Test basic functionality with numeric input
 test_that("color_summary works with numeric input", {
+  # Set a seed for reproducibility
   set.seed(123)
+  
+  # Generate random normal data
   x <- rnorm(100)
+  
+  # Call our function with 3 decimal places
   result <- color_summary(x, digits = 3)
   
+  # Check that the returned object is a list
   expect_type(result, "list")
+  
+  # Verify that we get all 7 expected statistics
   expect_equal(length(result), 7)
+  
+  # Confirm that the calculated mean matches what we'd get directly
+  # (rounded to the same number of digits)
   expect_equal(round(mean(x), 3), result$mean)
+  
+  # Same check for the median statistic
   expect_equal(round(median(x), 3), result$median)
 })
 
+# Test error handling for invalid inputs
 test_that("color_summary handles errors", {
+  # Should error when given a character vector
   expect_error(color_summary("not numeric"))
+  
+  # Should error when given a list
   expect_error(color_summary(list(1, 2, 3)))
 })
 ```
@@ -566,7 +584,7 @@ usethis::use_readme_md()
 
 Example content:
 
-```markdown
+```
 # colorStats
 
 A simple R package that provides colored summary statistics in the console.
@@ -575,17 +593,13 @@ A simple R package that provides colored summary statistics in the console.
 
 You can install the development version from GitHub with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("your-username/colorStats")
-```
+    # install.packages("devtools")
+    devtools::install_github("your-username/colorStats")
 
 ## Example
 
-```r
-library(colorStats)
-color_summary(rnorm(100))
-```
+    library(colorStats)
+    color_summary(rnorm(100))
 ```
 
 ## Step 7: Set up a GitHub repository
@@ -618,35 +632,51 @@ pkgdown::build_site()
 
 3. Push to GitHub:
 
-```r
-system("git add .")
-system("git commit -m 'Add pkgdown site'")
-system("git push")
-```
+- Ensure that the newly created 'docs' folder is not listed in your '.gitignore' file
+- In RStudio, navigate to the Git pane (in the top right corner)
+- Ensure all items are staged, add a commit message, and click 'Commit'
+- Click 'Push'
+
 
 4. Enable GitHub Pages in your repository settings to make your pkgdown site visible online.
 
+- Go to your repository on GitHub.com
+- Click on "Settings" in the top navigation bar
+- Scroll down to the "GitHub Pages" section (or look for "Pages" in the left sidebar)
+- Under "Source", select "main" branch (or "master" if that's what you're using)
+- For the folder, select "docs" (this is where pkgdown builds the site by default)
+- Click "Save"
+- Follow the progress of your website build and deploy in the 'Actions' tab of your repository
+
 ## Step 9: Install and test your package
 
-1. Install your package from GitHub:
+1. Open a new RStudio session
+
+2. Install your package from GitHub:
 
 ```r
 devtools::install_github("your-username/colorStats")
 ```
 
-2. Test your new function:
+3. Test your new function:
 
 ```r
 library(colorStats)
 color_summary(mtcars$mpg)
 ```
 
+## Troubleshooting
+
+AI chatbots (like Claude and ChatGPT) are helpful for sorting through issues in R package development. Give them a try.
+
+Here is the completed [example](https://github.com/DaveEdge1/colorStats)
+
 ## Bonus (if time permits)
 
 Try adding:
-- A second function that builds on the first
-- A vignette that demonstrates your package
-- Continuous integration using GitHub Actions
+- A second function that builds on the first (remember to document!)
+- A vignette that demonstrates your package (usethis)
+- Continuous integration using GitHub Actions (usethis)
 
 ## Conclusion
 
