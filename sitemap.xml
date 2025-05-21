@@ -4,7 +4,8 @@
 <url> <loc>https://linked.earth/RLeapFROGS/module2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://linked.earth/RLeapFROGS/module3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://linked.earth/RLeapFROGS/module4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://linked.earth/RLeapFROGS/module6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://linked.earth/RLeapFROGS/module5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://linked.earth/RLeapFROGS/module6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://linked.earth/RLeapFROGS/module7</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://linked.earth/RLeapFROGS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
