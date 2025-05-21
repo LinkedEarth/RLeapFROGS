@@ -36,6 +36,8 @@ You may not need to package your code if:
 
 As a rule of thumb: workflows for a single paper do not need to be packaged, but helper functions supporting the workflow might.
 
+[More slides on R packaging](https://figshare.com/articles/online_resource/RLeapFROGS_packaging_slides/29121650)
+
 </exercise>
 
 <exercise id="2" title="Sharing your package">
